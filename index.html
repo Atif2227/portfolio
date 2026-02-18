@@ -1,207 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Atif Noorul Hasan | Healthcare Analytics Consultant</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Atif Hasan | Healthcare Analytics Consultant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: #1C1C1C;
-            color: #E5E5E5;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #1C1C1C;
+    color: #E5E5E5;
+}
 
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-        }
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
 
-        nav {
-            background: #222222;
-            padding: 18px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+nav {
+    background: #222;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+}
 
-        nav .nav-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+nav .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        nav a {
-            text-decoration: none;
-            color: #E5E5E5;
-            margin-left: 25px;
-            font-weight: 500;
-            font-size: 15px;
-        }
+nav a {
+    text-decoration: none;
+    color: #E5E5E5;
+    margin-left: 25px;
+    font-weight: 500;
+}
 
-        nav a:hover {
-            color: #0D9488;
-        }
+nav a:hover {
+    color: #0D9488;
+}
 
-        .btn-primary {
-            background-color: #0D9488;
-            color: white;
-            padding: 10px 18px;
-            border-radius: 6px;
-        }
+.btn-primary {
+    background-color: #0D9488;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
 
-        .hero {
-            padding: 100px 0;
-        }
+.btn-secondary {
+    border: 1px solid #0D9488;
+    color: #0D9488;
+    padding: 10px 18px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
 
-        .hero-content {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            gap: 40px;
-        }
+section {
+    padding: 90px 0;
+}
 
-        .hero-text {
-            flex: 1 1 500px;
-        }
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
 
-        .hero h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 42px;
-            margin-bottom: 20px;
-        }
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
 
-        .hero p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
+.hero-text {
+    flex: 1 1 500px;
+}
 
-        .hero-image {
-            flex: 1 1 300px;
-            text-align: center;
-        }
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
 
-        .hero-image img {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            border: 6px solid #FFFFFF;
-            object-fit: cover;
-        }
+.hero-image {
+    flex: 1 1 300px;
+    text-align: center;
+}
 
-        .section {
-            padding: 80px 0;
-        }
+.hero-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 6px solid white;
+    object-fit: cover;
+}
 
-        .section h2 {
-            font-family: 'Poppins', sans-serif;
-            margin-bottom: 20px;
-        }
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
 
-        .cta {
-            text-align: center;
-            padding: 80px 0;
-            background-color: #2A2A2A;
-        }
+.card {
+    background: #262626;
+    padding: 25px;
+    border-radius: 8px;
+}
 
-        .cta h2 {
-            margin-bottom: 20px;
-            font-family: 'Poppins', sans-serif;
-        }
+.cta {
+    background: #2A2A2A;
+    text-align: center;
+}
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #222222;
-            font-size: 14px;
-            color: #AAAAAA;
-        }
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #222;
+    color: #AAAAAA;
+}
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero-content {
-                flex-direction: column-reverse;
-                text-align: center;
-            }
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 
-            .hero h1 {
-                font-size: 30px;
-            }
+    .hero-text h1 {
+        font-size: 30px;
+    }
 
-            nav .nav-content {
-                flex-direction: column;
-                gap: 10px;
-            }
+    nav .nav-content {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-            nav a {
-                margin-left: 0;
-            }
-        }
-    </style>
+    nav a {
+        margin-left: 0;
+    }
+}
+</style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="container nav-content">
-            <div><strong>Atif Noorul Hasan</strong></div>
-            <div>
-                <a href="#">Home</a>
-                <a href="#">Case Studies</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-                <a href="#" class="btn-primary">Book Consultation</a>
-            </div>
-        </div>
-    </nav>
+<!-- NAVIGATION -->
+<nav>
+<div class="container nav-content">
+<div><strong>Atif Hasan</strong></div>
+<div>
+<a href="#">Home</a>
+<a href="#">Case Studies</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+<a href="#" class="btn-primary">Book Consultation</a>
+</div>
+</div>
+</nav>
 
-    <!-- Hero Section -->
-    <div class="hero container">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Healthcare Analytics That Drives Measurable Performance</h1>
-                <p>
-                    I help healthcare organizations transform complex data into executive-ready dashboards 
-                    that improve operational efficiency, financial visibility, and clinical decision-making.
-                </p>
-                <a href="#" class="btn-primary">Schedule a Consultation</a>
-            </div>
+<!-- SECTION 1 HERO -->
+<section>
+<div class="container hero-content">
+<div class="hero-text">
+<h1>Healthcare Analytics That Drives Measurable Performance</h1>
+<p>
+I help healthcare organizations transform fragmented data into executive-ready dashboards 
+that improve operational efficiency, financial visibility, and clinical decision-making.
+</p>
+<p><strong>Power BI Consulting • KPI Architecture • Data Modeling • Reporting Automation</strong></p>
+<a href="#" class="btn-primary">Book a Consultation</a>
+<a href="#" class="btn-secondary">View Case Studies</a>
+</div>
 
-            <div class="hero-image">
-                <img src="your-photo.jpg" alt="Atif Noorul Hasan">
-            </div>
-        </div>
-    </div>
+<div class="hero-image">
+<img src="your-photo.jpg" alt="Atif Hasan">
+</div>
+</div>
+</section>
 
-    <!-- Problem Section -->
-    <div class="section container">
-        <h2>Most Healthcare Data Exists. Few Organizations Turn It Into a Strategy.</h2>
-        <p>
-            Fragmented systems, manual reporting, and unclear KPIs prevent healthcare leaders 
-            from making confident, data-driven decisions.
-        </p>
-    </div>
+<!-- SECTION 2 PROBLEM -->
+<section>
+<div class="container">
+<h2>Most Healthcare Data Exists. Few Organizations Turn It Into Strategy.</h2>
+<p>
+Healthcare organizations generate massive volumes of clinical, financial, and operational data. 
+Yet decision-makers often struggle with delayed reporting, siloed systems, and unclear performance indicators.
+</p>
 
-    <!-- Call To Action -->
-    <div class="cta">
-        <div class="container">
-            <h2>Elevate Your Healthcare Reporting Strategy</h2>
-            <p>I typically respond within 24 hours.</p>
-            <a href="#" class="btn-primary">Book a Consultation</a>
-        </div>
-    </div>
+<div class="card-grid">
+<div class="card">
+<h3>Manual Reporting & Excel Dependency</h3>
+<p>Time-consuming processes reduce agility and increase risk of errors.</p>
+</div>
 
-    <footer>
-        © 2026 Atif Noorul Hasan | Healthcare Analytics Consultant
-    </footer>
+<div class="card">
+<h3>Fragmented Data Systems</h3>
+<p>Clinical, billing, and operations data lack integration.</p>
+</div>
+
+<div class="card">
+<h3>Unclear KPI Frameworks</h3>
+<p>Leadership teams operate without consistent performance metrics.</p>
+</div>
+
+<div class="card">
+<h3>Revenue & Efficiency Leakage</h3>
+<p>Hidden operational gaps impact profitability and patient outcomes.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECTION 3 FRAMEWORK -->
+<section>
+<div class="container">
+<h2>A Structured Approach to Healthcare Intelligence</h2>
+
+<div class="card-grid">
+<div class="card">
+<h3>Diagnose the Data Landscape</h3>
+<p>I evaluate reporting workflows, data sources, and stakeholder decision requirements.</p>
+</div>
+
+<div class="card">
+<h3>Architect a KPI Framework</h3>
+<p>I define clinical, operational, and financial KPIs aligned with strategic goals.</p>
+</div>
+
+<div class="card">
+<h3>Deliver Executive Dashboards</h3>
+<p>I build scalable Power BI dashboards that provide clarity, accountability, and measurable impact.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECTION 4 CASE STUDY -->
+<section>
+<div class="container">
+<h2>Case Study: Hospital Operations Intelligence Dashboard</h2>
+
+<p><strong>The Challenge:</strong> A healthcare provider lacked real-time visibility into patient flow, departmental efficiency, and revenue performance.</p>
+
+<p><strong>The Solution:</strong> Developed an integrated Power BI reporting system combining operational and financial data into a unified executive dashboard.</p>
+
+<ul>
+<li>Reduced reporting preparation time by 40%</li>
+<li>Identified patient throughput bottlenecks</li>
+<li>Improved financial performance visibility</li>
+</ul>
+
+<a href="#" class="btn-secondary">Explore All Case Studies</a>
+
+</div>
+</section>
+
+<!-- SECTION 5 SERVICES -->
+<section>
+<div class="container">
+<h2>Consulting Services</h2>
+
+<div class="card-grid">
+<div class="card">Healthcare Power BI Dashboard Development</div>
+<div class="card">KPI Framework Design & Optimization</div>
+<div class="card">Clinical & Financial Reporting Systems</div>
+<div class="card">Data Modeling & ETL Structuring</div>
+<div class="card">Ongoing Performance Analytics Support</div>
+</div>
+</div>
+</section>
+
+<!-- SECTION 6 FINAL CTA -->
+<section class="cta">
+<div class="container">
+<h2>Elevate Your Healthcare Reporting Strategy</h2>
+<p>If your organization relies on data to make critical decisions, your reporting system should be built with precision and clarity.</p>
+<a href="#" class="btn-primary">Schedule a Consultation</a>
+<p style="margin-top:15px;">I respond within 24 hours.</p>
+</div>
+</section>
+
+<footer>
+© 2026 Atif Hasan | Healthcare Analytics Consultant
+</footer>
 
 </body>
 </html>
