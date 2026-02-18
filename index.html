@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Atif Hasan | Healthcare Analytics Consultant</title>
+<title>Atif Noorul Hasan | Healthcare Analytics Consultant</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
+
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -15,30 +16,36 @@ body {
     color: #E5E5E5;
 }
 
+/* Container */
 .container {
     width: 90%;
     max-width: 1100px;
     margin: auto;
 }
 
+/* Navigation */
 nav {
     background: #222;
-    padding: 18px 0;
-    position: sticky;
-    top: 0;
+    padding: 15px 0;
 }
 
-nav .nav-content {
+.nav-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 nav a {
     text-decoration: none;
     color: #E5E5E5;
-    margin-left: 25px;
-    font-weight: 500;
+    font-size: 14px;
 }
 
 nav a:hover {
@@ -50,6 +57,7 @@ nav a:hover {
     color: white;
     padding: 10px 18px;
     border-radius: 6px;
+    display: inline-block;
 }
 
 .btn-secondary {
@@ -57,46 +65,58 @@ nav a:hover {
     color: #0D9488;
     padding: 10px 18px;
     border-radius: 6px;
-    margin-left: 10px;
+    display: inline-block;
 }
 
+/* Sections */
 section {
-    padding: 90px 0;
+    padding: 80px 0;
 }
 
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
 }
 
-.hero-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 40px;
-}
-
-.hero-text {
-    flex: 1 1 500px;
-}
-
-.hero-text h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
-}
-
-.hero-image {
-    flex: 1 1 300px;
+/* HERO */
+.hero {
     text-align: center;
 }
 
-.hero-image img {
-    width: 250px;
-    height: 250px;
+.hero img {
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     border: 6px solid white;
     object-fit: cover;
 }
 
+.hero-title-small {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    margin-top: 30px;
+    font-size: 36px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Cards */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -110,6 +130,7 @@ h1, h2, h3 {
     border-radius: 8px;
 }
 
+/* CTA */
 .cta {
     background: #2A2A2A;
     text-align: center;
@@ -122,25 +143,34 @@ footer {
     color: #AAAAAA;
 }
 
+/* MOBILE FIXES */
 @media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
 
-    .hero-text h1 {
-        font-size: 30px;
-    }
-
-    nav .nav-content {
+    .nav-content {
         flex-direction: column;
+        align-items: center;
         gap: 10px;
     }
 
-    nav a {
-        margin-left: 0;
+    .nav-links {
+        justify-content: center;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons a {
+        width: 80%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 26px;
     }
 }
+
 </style>
 </head>
 
@@ -149,8 +179,9 @@ footer {
 <!-- NAVIGATION -->
 <nav>
 <div class="container nav-content">
-<div><strong>Atif Hasan</strong></div>
-<div>
+<div><strong>Atif Noorul Hasan</strong></div>
+
+<div class="nav-links">
 <a href="#">Home</a>
 <a href="#">Case Studies</a>
 <a href="#">About</a>
@@ -161,22 +192,27 @@ footer {
 </nav>
 
 <!-- SECTION 1 HERO -->
-<section>
-<div class="container hero-content">
-<div class="hero-text">
+<section class="hero">
+<div class="container">
+
+<img src="your-photo.jpg" alt="Atif Noorul Hasan">
+
+<div class="hero-title-small">
+Healthcare Analytics Consultant
+</div>
+
 <h1>Healthcare Analytics That Drives Measurable Performance</h1>
+
 <p>
 I help healthcare organizations transform fragmented data into executive-ready dashboards 
 that improve operational efficiency, financial visibility, and clinical decision-making.
 </p>
-<p><strong>Power BI Consulting • KPI Architecture • Data Modeling • Reporting Automation</strong></p>
+
+<div class="hero-buttons">
 <a href="#" class="btn-primary">Book a Consultation</a>
 <a href="#" class="btn-secondary">View Case Studies</a>
 </div>
 
-<div class="hero-image">
-<img src="your-photo.jpg" alt="Atif Hasan">
-</div>
 </div>
 </section>
 
@@ -184,6 +220,7 @@ that improve operational efficiency, financial visibility, and clinical decision
 <section>
 <div class="container">
 <h2>Most Healthcare Data Exists. Few Organizations Turn It Into Strategy.</h2>
+
 <p>
 Healthcare organizations generate massive volumes of clinical, financial, and operational data. 
 Yet decision-makers often struggle with delayed reporting, siloed systems, and unclear performance indicators.
@@ -210,6 +247,7 @@ Yet decision-makers often struggle with delayed reporting, siloed systems, and u
 <p>Hidden operational gaps impact profitability and patient outcomes.</p>
 </div>
 </div>
+
 </div>
 </section>
 
@@ -234,6 +272,7 @@ Yet decision-makers often struggle with delayed reporting, siloed systems, and u
 <p>I build scalable Power BI dashboards that provide clarity, accountability, and measurable impact.</p>
 </div>
 </div>
+
 </div>
 </section>
 
@@ -269,10 +308,11 @@ Yet decision-makers often struggle with delayed reporting, siloed systems, and u
 <div class="card">Data Modeling & ETL Structuring</div>
 <div class="card">Ongoing Performance Analytics Support</div>
 </div>
+
 </div>
 </section>
 
-<!-- SECTION 6 FINAL CTA -->
+<!-- SECTION 6 CTA -->
 <section class="cta">
 <div class="container">
 <h2>Elevate Your Healthcare Reporting Strategy</h2>
@@ -283,7 +323,7 @@ Yet decision-makers often struggle with delayed reporting, siloed systems, and u
 </section>
 
 <footer>
-© 2026 Atif Hasan | Healthcare Analytics Consultant
+© 2026 Atif Noorul Hasan | Healthcare Analytics Consultant
 </footer>
 
 </body>
