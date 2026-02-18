@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Atif Hasan | Healthcare Analytics Consultant</title>
+    <title>Atif Noorul Hasan | Healthcare Analytics Consultant</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Fonts -->
@@ -12,22 +12,22 @@
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
-            background-color: #F3F4F6;
-            color: #1F2937;
+            background-color: #1C1C1C;
+            color: #E5E5E5;
         }
 
         .container {
             width: 90%;
-            max-width: 1100px;
+            max-width: 1200px;
             margin: auto;
         }
 
         nav {
-            background: #FFFFFF;
-            padding: 20px 0;
+            background: #222222;
+            padding: 18px 0;
             position: sticky;
             top: 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            z-index: 1000;
         }
 
         nav .nav-content {
@@ -38,9 +38,14 @@
 
         nav a {
             text-decoration: none;
-            color: #1F2937;
+            color: #E5E5E5;
             margin-left: 25px;
             font-weight: 500;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #0D9488;
         }
 
         .btn-primary {
@@ -51,25 +56,48 @@
         }
 
         .hero {
-            padding: 80px 0;
-            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1 1 500px;
         }
 
         .hero h1 {
             font-family: 'Poppins', sans-serif;
-            font-size: 40px;
+            font-size: 42px;
             margin-bottom: 20px;
         }
 
         .hero p {
             font-size: 18px;
-            max-width: 700px;
-            margin: auto;
+            line-height: 1.6;
             margin-bottom: 30px;
         }
 
+        .hero-image {
+            flex: 1 1 300px;
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 6px solid #FFFFFF;
+            object-fit: cover;
+        }
+
         .section {
-            padding: 70px 0;
+            padding: 80px 0;
         }
 
         .section h2 {
@@ -80,19 +108,41 @@
         .cta {
             text-align: center;
             padding: 80px 0;
-            background-color: #1E3A8A;
-            color: white;
+            background-color: #2A2A2A;
         }
 
         .cta h2 {
             margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
         }
 
         footer {
             text-align: center;
             padding: 30px;
-            background: #FFFFFF;
+            background: #222222;
             font-size: 14px;
+            color: #AAAAAA;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            nav .nav-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin-left: 0;
+            }
         }
     </style>
 </head>
@@ -102,7 +152,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container nav-content">
-            <div><strong>Atif Hasan</strong></div>
+            <div><strong>Atif Noorul Hasan</strong></div>
             <div>
                 <a href="#">Home</a>
                 <a href="#">Case Studies</a>
@@ -115,17 +165,25 @@
 
     <!-- Hero Section -->
     <div class="hero container">
-        <h1>Healthcare Analytics That Drives Measurable Performance</h1>
-        <p>
-            I help healthcare organizations transform complex data into executive-ready dashboards 
-            that improve operational efficiency, financial visibility, and clinical decision-making.
-        </p>
-        <a href="#" class="btn-primary">Schedule a Consultation</a>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Healthcare Analytics That Drives Measurable Performance</h1>
+                <p>
+                    I help healthcare organizations transform complex data into executive-ready dashboards 
+                    that improve operational efficiency, financial visibility, and clinical decision-making.
+                </p>
+                <a href="#" class="btn-primary">Schedule a Consultation</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="your-photo.jpg" alt="Atif Noorul Hasan">
+            </div>
+        </div>
     </div>
 
     <!-- Problem Section -->
     <div class="section container">
-        <h2>Most Healthcare Data Exists. Few Organizations Turn It Into Strategy.</h2>
+        <h2>Most Healthcare Data Exists. Few Organizations Turn It Into a Strategy.</h2>
         <p>
             Fragmented systems, manual reporting, and unclear KPIs prevent healthcare leaders 
             from making confident, data-driven decisions.
@@ -142,7 +200,7 @@
     </div>
 
     <footer>
-        © 2026 Atif Hasan | Healthcare Analytics Consultant
+        © 2026 Atif Noorul Hasan | Healthcare Analytics Consultant
     </footer>
 
 </body>
