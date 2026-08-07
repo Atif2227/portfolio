@@ -1,0 +1,16 @@
+assets/
+└── case-studies/
+    ├── hero/
+    │   └── hero-illustration.png
+    │
+    └── cards/
+        ├── fabric-etl.png
+        ├── enterprise-platform.png
+        ├── healthcare-analytics.png
+        ├── workforce-training.png
+        ├── clinical-reporting.png
+        ├── education-modernization.png
+        ├── aviation-analytics.png
+        ├── retail-analytics.png
+        ├── qsr-analytics.png
+        └── bioinformatics-research.png

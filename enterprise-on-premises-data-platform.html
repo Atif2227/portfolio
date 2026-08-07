@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Enterprise On-Premises Data Platform and ETL Automation case study by Atif Noorul Hasan.">
+<title>Enterprise On-Premises Data Platform &amp; ETL Automation | Atif Noorul Hasan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/individual-case-study.css">
+<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+<header class="site-header"><div class="navbar-container">
+<a class="brand" href="index.html"><img src="assets/logo/logo-horizontal.png" alt="ANH logo" class="brand-logo"><span class="brand-copy"><span class="brand-name">ATIF NOORUL HASAN</span><span class="brand-title">DATA MODERNIZATION CONSULTANT</span></span></a>
+<button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button>
+<nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="services.html">Services</a><a class="nav-link active" href="case-study.html">Case Studies</a><a class="nav-link" href="about.html">About</a><a class="nav-link" href="contact.html">Contact</a></nav>
+</div></header>
+
+<main>
+
+<section class="case-hero"><div class="case-container case-hero-inner">
+<h1>Enterprise On-Premises<br>Data Platform &amp; ETL Automation</h1>
+<p>Developed a fully automated, cost-efficient enterprise LMS data platform using Python, SQL Server, optimized SQL views, Windows batch scripts, Task Scheduler, and Power BI—without relying on licensed cloud orchestration or enterprise ETL platforms.</p>
+<div class="hero-badges" aria-label="Project highlights">
+<span><i class="fa-solid fa-server"></i>On-Premises Platform</span>
+<span><i class="fa-solid fa-coins"></i>No Enterprise ETL Licensing Cost</span>
+<span><i class="fa-solid fa-calendar-days"></i>2015–2026 Historical Data</span>
+<span><i class="fa-solid fa-gears"></i>Fully Automated Daily Refresh</span>
+<span><i class="fa-solid fa-gauge-high"></i>95%+ Faster Reporting</span>
+</div>
+</div></section>
+
+<section class="case-section"><div class="case-container split-layout">
+<div class="section-panel">
+<div class="section-heading"><span>1.</span><h2>Business Challenge</h2></div>
+<p class="section-intro">The organization needed scalable, multi-year LMS reporting but lacked both a centralized warehouse and access to traditional enterprise ETL platforms.</p>
+<div class="challenge-grid onprem-challenge-grid">
+<article class="mini-card"><i class="fa-solid fa-code"></i><h3>API-Siloed &amp; Semi-Structured Data</h3><p>LMS information was accessible only through OData feeds containing complex nested JSON arrays that could not be used directly for business reporting.</p></article>
+<article class="mini-card"><i class="fa-solid fa-chart-area"></i><h3>Fragmented Multi-Year Reporting</h3><p>Separate Power BI files were limited to two calendar years each, making consolidated 2015–2026 trend analysis impossible.</p></article>
+<article class="mini-card"><i class="fa-solid fa-ban"></i><h3>Enterprise ETL Tool Constraints</h3><p>Organizational limits prevented use of SSIS, Azure Data Factory, Microsoft Fabric, or other standard orchestration platforms.</p></article>
+<article class="mini-card"><i class="fa-solid fa-gauge-simple-low"></i><h3>DirectQuery Performance Bottlenecks</h3><p>Direct connections to unmodelled source data caused slow report loading, screen lag, and frequent Power BI crashes.</p></article>
+</div>
+</div>
+
+<div class="section-panel section-panel-bordered">
+<div class="section-heading"><span>2.</span><h2>Solution</h2></div>
+<p class="section-intro">A custom on-premises data warehouse and automated ETL framework was engineered using Python, SQL Server, SQL views, Windows batch scripts, Task Scheduler, and Power BI.</p>
+<div class="solution-grid">
+<article class="feature-item"><i class="fa-brands fa-python"></i><div><h3>Custom Python ETL Engine</h3><p>Used requests, pandas, pyodbc, and urllib3 to authenticate, extract, transform, and load enterprise LMS data.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-link"></i><div><h3>OData Extraction &amp; Pagination</h3><p>Implemented $top, $skip, and $expand logic to retrieve large datasets, course ratings, and attendance sub-records safely.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-code-branch"></i><div><h3>JSON Normalization</h3><p>Flattened multi-layered roles and transactional arrays into clean relational rows while preserving empty attributes.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-boxes-stacked"></i><div><h3>Historical Batch Loading</h3><p>Used pyodbc fast_executemany and year-by-year historical batches to process 2015–2026 data reliably.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-clock-rotate-left"></i><div><h3>30-Day Overlap Protection</h3><p>Used the latest CreatedAt value, deleted overlapping records, and reloaded the current 30-day delta to avoid duplicate keys and missing changes.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-table"></i><div><h3>Semantic SQL Views</h3><p>Standardized strings, e-mail values, DATETIME fields, BIT fields, and reporting logic before Power BI consumption.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-star"></i><div><h3>Power BI Star Schema</h3><p>Connected Import-mode fact views for Enrollments and Attendances to conformed Users, Courses, and Course Sessions dimensions.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-terminal"></i><div><h3>Windows Automation</h3><p>Created executable batch scripts and scheduled the complete Python ETL workflow through Windows Task Scheduler.</p></div></article>
+</div>
+</div>
+</div></section>
+
+<section class="case-section case-section-alt"><div class="case-container">
+<div class="section-heading"><span>3.</span><h2>Business Impact</h2></div>
+
+<div class="impact-metric-grid">
+<article class="impact-metric-card"><i class="fa-solid fa-gauge-high"></i><strong>95%+</strong><h3>Faster Power BI Report Loading</h3><p>DirectQuery reporting was replaced with a centralized SQL Server warehouse and optimized semantic layer.</p></article>
+<article class="impact-metric-card"><i class="fa-solid fa-gears"></i><strong>80–90%</strong><h3>Less Manual ETL Effort</h3><p>Python-based extraction, transformation, batch processing, and scheduling automated routine data preparation.</p></article>
+<article class="impact-metric-card"><i class="fa-solid fa-stopwatch"></i><strong>70–85%</strong><h3>Faster Daily Data Processing</h3><p>Incremental loading eliminated repeated processing of the complete historical dataset.</p></article>
+<article class="impact-metric-card"><i class="fa-solid fa-calendar-days"></i><strong>11+ Years</strong><h3>Consolidated LMS History</h3><p>Data from 2015–2026 replaced multiple year-specific reports with one enterprise reporting platform.</p></article>
+</div>
+
+<div class="impact-cards impact-secondary-grid">
+<article class="impact-card"><i class="fa-solid fa-database"></i><div><h3>Centralized Single Source of Truth</h3><p>A governed SQL Server warehouse improved reporting accuracy and consistency across enterprise LMS analytics.</p></div></article>
+<article class="impact-card"><i class="fa-solid fa-shield-halved"></i><div><h3>Duplicate &amp; Missing Records Eliminated</h3><p>Overlap-window incremental loading and automated validation protected data completeness and business-key integrity.</p></div></article>
+<article class="impact-card"><i class="fa-solid fa-coins"></i><div><h3>Enterprise ETL Licensing Costs Avoided</h3><p>Python, SQL Server, Windows Task Scheduler, and batch automation delivered enterprise-grade ETL without dedicated platform licensing.</p></div></article>
+<article class="impact-card"><i class="fa-solid fa-up-right-and-down-left-from-center"></i><div><h3>Scalable Foundation Established</h3><p>The reusable framework can support new data sources and increasing reporting demand without major architectural redesign.</p></div></article>
+</div>
+</div></section>
+
+<section class="case-section"><div class="case-container split-layout architecture-layout">
+<article class="diagram-card">
+<div class="section-heading"><span>4.</span><h2>Solution Architecture</h2></div>
+<div class="architecture-diagram">
+<div class="diagram-label">On-Premises Enterprise LMS Data Platform</div>
+<div class="source-row">
+<div class="diagram-node"><i class="fa-solid fa-link"></i><span>LMS OData API</span><small>Nested JSON and Transactions</small></div>
+<div class="diagram-node"><i class="fa-brands fa-python"></i><span>Python ETL Engine</span><small>Extract, Flatten, Validate</small></div>
+<div class="diagram-node"><i class="fa-solid fa-calendar-days"></i><span>Historical + Incremental</span><small>2015–2026 and 30-Day Delta</small></div>
+</div>
+<div class="down-arrows"><span>↓</span><span>↓</span><span>↓</span></div>
+<div class="layer-row">
+<div class="diagram-node python-node"><i class="fa-solid fa-code"></i><span>Python Processing</span><small>requests, pandas, pyodbc</small></div>
+<b>→</b>
+<div class="diagram-node sql-node"><i class="fa-solid fa-database"></i><span>SQL Server Warehouse</span><small>Central Enterprise Storage</small></div>
+<b>→</b>
+<div class="diagram-node view-node"><i class="fa-solid fa-table"></i><span>Semantic SQL Views</span><small>Reporting-Ready Layer</small></div>
+</div>
+<div class="single-down">↓</div>
+<div class="diagram-node wide"><i class="fa-solid fa-star"></i><span>Power BI Import-Mode Star Schema</span></div>
+<div class="single-down">↓</div>
+<div class="diagram-node wide"><i class="fa-solid fa-chart-column"></i><span>Enterprise LMS Dashboards &amp; Multi-Year Analytics</span></div>
+</div>
+<p class="diagram-caption">A local, low-cost architecture using core technologies and existing infrastructure instead of licensed cloud orchestration.</p>
+</article>
+
+<article class="diagram-card">
+<div class="section-heading"><span>5.</span><h2>Automated ETL Pipeline</h2></div>
+<div class="evidence-frame onprem-pipeline-frame"><img src="assets/case-studies/on-premises/automated-etl-pipeline.jpg" alt="On-premises Python SQL Server ETL pipeline"></div>
+<p class="diagram-caption">The documented control flow extracts paginated OData data, flattens nested JSON, loads SQL Server production tables, applies semantic SQL views, and supplies a Power BI star schema through automated batch scheduling.</p>
+</article>
+</div></section>
+
+<section class="case-section case-section-alt"><div class="case-container">
+<div class="section-heading"><span>6.</span><h2>Technology Stack</h2></div>
+<div class="tech-grid tech-grid-wide">
+<span>Python</span><span>requests</span><span>pandas</span><span>pyodbc</span><span>urllib3</span><span>SQL Server</span><span>SSMS</span><span>T-SQL Views</span><span>OData API</span><span>JSON Parsing</span><span>Power BI Desktop</span><span>Power BI Service</span><span>Star Schema</span><span>Windows Batch Files</span><span>Windows Task Scheduler</span>
+</div>
+</div></section>
+
+<section class="case-section"><div class="case-container">
+<div class="section-heading"><span>7.</span><h2>Project Showcase</h2></div>
+<div class="showcase-grid">
+<article class="showcase-card"><h3>Live Power BI Dashboard</h3><div class="embed-frame"><iframe title="Power BI Dashboard" src="https://app.powerbi.com/view?r=REPLACE_WITH_PUBLIC_EMBED_LINK" loading="lazy" allowfullscreen="true"></iframe></div><p>Replace this placeholder with the public Power BI embed URL after publishing the report.</p></article>
+<article class="showcase-card"><h3>Video Walkthrough</h3><div class="embed-frame"><iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Video walkthrough placeholder" loading="lazy" allowfullscreen></iframe></div><p>Replace this generic YouTube URL after publishing the walkthrough.</p></article>
+</div>
+</div></section>
+
+<section class="case-section case-section-alt"><div class="case-container bottom-actions">
+<article class="repository-card"><i class="fa-brands fa-github repo-icon"></i><div><div class="section-heading compact"><span>8.</span><h2>GitHub Repository</h2></div><h3>Explore the Full Technical Implementation</h3><p>The repository contains Python ETL scripts, SQL warehouse design, semantic views, Windows automation, architecture details, and project documentation.</p></div><a class="primary-action" href="https://github.com/Atif2227/Enterprise-LMS-Data-Warehouse-Automated-ETL-Pipeline" target="_blank" rel="noopener noreferrer">View GitHub Repository ↗</a></article>
+<article class="other-cases-card"><div><h2>Explore More Case Studies</h2><p>Discover more enterprise data transformation and analytics projects.</p></div><a class="secondary-action" href="case-study.html">View Other Case Studies →</a></article>
+</div></section>
+
+</main>
+
+<footer class="site-footer"><div class="footer-container"><div class="footer-brand"><img src="assets/logo/logo-horizontal.png" alt="ANH logo" class="footer-logo"><div class="footer-brand-content"><p class="footer-name">ATIF NOORUL HASAN</p><p class="footer-title">DATA MODERNIZATION CONSULTANT</p><p class="footer-description">Empowering organizations with data-driven solutions for measurable impact.</p></div></div><div class="footer-contact"><a href="mailto:atif@atifdata.com" class="footer-contact-item"><i class="fa-regular fa-envelope"></i><span>atif@atifdata.com</span></a><div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i><span>Qatar</span></div><a href="https://www.linkedin.com/in/atifnhasan" class="footer-contact-item" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i><span>linkedin.com/in/atifnhasan</span></a><a href="https://github.com/atif2227" class="footer-contact-item" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><span>github.com/atif2227</span></a></div><div class="footer-legal"><p>© 2026 Atif Noorul Hasan. All rights reserved.</p><div class="footer-legal-links"><a href="privacy-policy.html">Privacy Policy</a><span>|</span><a href="terms-of-use.html">Terms of Use</a></div></div></div></footer>
+
+<script src="js/navbar.js"></script>
+</body>
+</html>

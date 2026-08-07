@@ -1,0 +1,267 @@
+/* =========================================================
+   FILE: footer.css
+   PURPOSE: Website Footer
+========================================================= */
+
+.site-footer{
+    background:
+        radial-gradient(circle at 50% 0%, rgba(34,211,197,.03), transparent 36%),
+        #050b10;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.footer-container{
+    width:min(calc(100% - 48px), var(--container-width));
+    margin:auto;
+    padding:34px 0;
+    display:grid;
+    grid-template-columns:1.15fr .9fr .85fr;
+    gap:52px;
+    align-items:center;
+}
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.footer-brand{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.footer-logo{
+    width:auto;
+    height:70px;
+    margin-top:-70px;
+    flex-shrink:0;
+    object-fit:contain;
+    display:block;
+}
+
+.footer-brand-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    min-height:140px;
+}
+
+.footer-name{
+    margin:0;
+    color:var(--text-primary);
+    font-size:.92rem;
+    font-weight:700;
+    line-height:1.2;
+}
+
+.footer-title{
+    margin:8px 0 0;
+    color:var(--accent);
+    font-size:.64rem;
+    font-weight:600;
+    letter-spacing:.06em;
+}
+
+.footer-description{
+    max-width:330px;
+    margin:22px 0 0;
+    color:var(--text-muted);
+    font-size:.80rem;
+    line-height:1.75;
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.footer-contact{
+    display:grid;
+    gap:12px;
+}
+
+.footer-contact-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:var(--text-muted);
+    font-size:.80rem;
+    text-decoration:none;
+    transition:color .25s ease, transform .25s ease;
+}
+
+a.footer-contact-item:hover{
+    color:var(--accent);
+    transform:translateX(3px);
+}
+
+.footer-contact-item i{
+    width:18px;
+    flex-shrink:0;
+    color:var(--text-primary);
+    font-size:15px;
+    line-height:1;
+    text-align:center;
+    transition:color .25s ease;
+}
+
+a.footer-contact-item:hover i{
+    color:var(--accent);
+}
+
+.footer-contact-item:focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:4px;
+    border-radius:3px;
+}
+
+/* =========================================================
+   LEGAL
+========================================================= */
+
+.footer-legal{
+    color:var(--text-muted);
+    font-size:.78rem;
+    line-height:1.7;
+}
+
+.footer-legal p{
+    margin:0 0 18px;
+}
+
+.footer-legal-links{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.footer-legal-links a,
+.footer-legal-links a:link,
+.footer-legal-links a:visited{
+    color:var(--text-muted);
+    text-decoration:none;
+    transition:color .25s ease;
+}
+
+.footer-legal-links a:hover,
+.footer-legal-links a:focus-visible{
+    color:var(--accent);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width:1050px){
+
+    .footer-container{
+        grid-template-columns:repeat(2,1fr);
+        gap:40px;
+    }
+
+    .footer-legal{
+        grid-column:1/-1;
+        padding-top:24px;
+        border-top:1px solid rgba(255,255,255,.07);
+    }
+
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:720px){
+
+    .footer-container{
+        width:min(calc(100% - 28px), var(--container-width));
+        grid-template-columns:1fr;
+        gap:34px;
+        text-align:center;
+    }
+
+    .footer-brand{
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    .footer-logo{
+        height:95px;
+    }
+
+    .footer-brand-content{
+        min-height:auto;
+        align-items:center;
+    }
+
+    .footer-description{
+        margin-top:18px;
+    }
+
+    .footer-contact{
+        justify-items:center;
+    }
+
+    .footer-contact-item{
+        justify-content:center;
+        overflow-wrap:anywhere;
+    }
+
+    .footer-legal{
+        grid-column:auto;
+        text-align:center;
+    }
+
+    .footer-legal-links{
+        justify-content:center;
+    }
+
+}
+
+@media (max-width:420px){
+
+    .footer-container{
+        width:min(calc(100% - 22px), var(--container-width));
+    }
+
+}
+
+/* =========================================================
+   LARGE DESKTOP / TV
+========================================================= */
+
+@media (min-width:1600px){
+
+    .footer-container{
+        gap:64px;
+        padding:42px 0;
+    }
+
+    .footer-logo{
+        height:165px;
+    }
+
+    .footer-brand-content{
+        min-height:165px;
+    }
+
+    .footer-name{
+        font-size:1rem;
+    }
+
+    .footer-title{
+        font-size:.70rem;
+    }
+
+    .footer-description,
+    .footer-contact-item,
+    .footer-legal{
+        font-size:.86rem;
+    }
+
+}
+.footer-brand,.footer-contact,.footer-legal{min-width:0}.footer-contact-item,.footer-description,.footer-legal{overflow-wrap:anywhere}
+@media(max-width:1050px){.footer-container{align-items:start}.footer-logo{margin-top:0}}
+@media(max-width:720px){.footer-container{padding-block:30px}.footer-brand{gap:14px}.footer-logo{width:auto;height:70px;margin-top:0}.footer-contact{width:100%}.footer-contact-item{min-height:44px}.footer-legal-links{flex-wrap:wrap}}
+@media(max-width:420px){.footer-name{font-size:.86rem}.footer-title{font-size:.58rem}}
+@media(min-width:1600px){.footer-logo{height:82px;margin-top:0}.footer-brand-content{min-height:auto}}

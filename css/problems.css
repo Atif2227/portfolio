@@ -1,0 +1,161 @@
+/* =========================================================
+   FILE: css/problems.css
+   PURPOSE: Problems I Solve section
+========================================================= */
+
+.problems {
+  position: relative;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(34, 211, 197, 0.04), transparent 35%),
+    #071018;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.problems-container {
+  width: min(calc(100% - 48px), var(--container-width));
+  margin-inline: auto;
+  padding-block: 34px 38px;
+}
+
+.problems-heading {
+  margin-bottom: 18px;
+}
+
+.problems-heading .section-eyebrow {
+  margin-bottom: 12px;
+}
+
+.problems-title {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: clamp(1.45rem, 2vw, 2.1rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.problems-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.problem-card {
+  min-width: 0;
+  min-height: 260px;
+  padding: 20px 16px 18px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.018));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 7px;
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    background-color var(--transition);
+}
+
+.problem-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(34, 211, 197, 0.35);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.problem-icon {
+  margin-bottom: 18px;
+  color: var(--accent);
+}
+
+.problem-icon svg {
+  width: 38px;
+  height: 38px;
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.problem-card h3 {
+  margin: 0 0 12px;
+  color: var(--text-primary);
+  font-size: 0.96rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.problem-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+/* Medium desktop and tablet */
+@media (max-width: 1200px) {
+  .problems-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .problem-card {
+    min-height: 230px;
+  }
+}
+
+@media (max-width: 760px) {
+  .problems-container {
+    width: min(calc(100% - 28px), var(--container-width));
+    padding-block: 32px;
+  }
+
+  .problems-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .problem-card {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 520px) {
+  .problems-container {
+    width: min(calc(100% - 22px), var(--container-width));
+  }
+
+  .problems-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .problem-card {
+    min-height: auto;
+  }
+}
+
+/* Large desktop and TV */
+@media (min-width: 1600px) {
+  .problems-container {
+    padding-block: 44px 48px;
+  }
+
+  .problems-grid {
+    gap: 18px;
+  }
+
+  .problem-card {
+    min-height: 300px;
+    padding: 24px 20px;
+  }
+
+  .problem-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .problem-card p {
+    font-size: 0.92rem;
+  }
+}
+
+@media(max-width:900px){.problems-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.problem-card{min-height:210px}}
+@media(max-width:600px){.problems-title{line-height:1.15}.problems-grid{grid-template-columns:1fr}.problem-card{min-height:auto;padding:18px 16px}}
+@media(hover:none){.problem-card:hover{transform:none}}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AI-Driven Predictive Analytics for Clinical Risk and Patient Readmission Mitigation by Atif Noorul Hasan.">
+<title>AI-Driven Predictive Clinical Risk &amp; Patient Readmission Mitigation Platform | Atif Noorul Hasan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/individual-case-study.css">
+<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+<header class="site-header"><div class="navbar-container">
+<a class="brand" href="index.html"><img src="assets/logo/logo-horizontal.png" alt="ANH logo" class="brand-logo"><span class="brand-copy"><span class="brand-name">ATIF NOORUL HASAN</span><span class="brand-title">DATA MODERNIZATION CONSULTANT</span></span></a>
+<button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button>
+<nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="services.html">Services</a><a class="nav-link active" href="case-study.html">Case Studies</a><a class="nav-link" href="about.html">About</a><a class="nav-link" href="contact.html">Contact</a></nav>
+</div></header>
+
+<main>
+
+<section class="case-hero"><div class="case-container case-hero-inner">
+<h1>AI-Driven Predictive Clinical Risk<br>&amp; Patient Readmission Mitigation Platform</h1>
+<p>Architected an end-to-end healthcare data and machine learning platform that predicts 30-day readmission risk, prioritizes vulnerable patients, and supports prescriptive discharge interventions across a multi-site hospital network.</p>
+<div class="hero-badges" aria-label="Project highlights">
+<span><i class="fa-solid fa-brain"></i>Predictive Clinical Analytics</span>
+<span><i class="fa-solid fa-hospital-user"></i>30-Day Readmission Risk</span>
+<span><i class="fa-solid fa-shield-halved"></i>HIPAA-Aligned Architecture</span>
+<span><i class="fa-solid fa-chart-line"></i>0.9748 ROC-AUC</span>
+<span><i class="fa-solid fa-sack-dollar"></i>$37M Potential Savings</span>
+</div>
+</div></section>
+
+<section class="case-section"><div class="case-container split-layout">
+<div class="section-panel">
+<div class="section-heading"><span>1.</span><h2>Business Challenge</h2></div>
+<p class="section-intro">Unity Health Systems faced substantial clinical, operational, and financial pressure from high 30-day readmissions and CMS reimbursement penalties under the Hospital Readmissions Reduction Program.</p>
+<div class="challenge-grid ai-challenge-grid">
+<article class="mini-card"><i class="fa-solid fa-network-wired"></i><h3>Information Silos &amp; Clinical Chaos</h3><p>Patient data remained trapped across fragmented regional Cerner EHR databases, preventing a unified network-wide view of patient risk at the point of care.</p></article>
+<article class="mini-card"><i class="fa-solid fa-code-compare"></i><h3>Data Inconsistency Across Facilities</h3><p>Different hospitals recorded identical clinical events using inconsistent structures, syntax, and descriptions, threatening predictive-model accuracy and fairness.</p></article>
+<article class="mini-card"><i class="fa-solid fa-user-clock"></i><h3>Resource Strain &amp; Blind Discharges</h3><p>Case managers lacked real-time risk foresight and had to review 100% of discharges instead of targeting limited post-discharge support toward the most vulnerable patients.</p></article>
+</div>
+</div>
+
+<div class="section-panel section-panel-bordered">
+<div class="section-heading"><span>2.</span><h2>Solution</h2></div>
+<p class="section-intro">An end-to-end predictive healthcare pipeline shifted the network from reactive descriptive reporting to proactive, prescriptive clinical intervention.</p>
+<div class="solution-grid">
+<article class="feature-item"><i class="fa-solid fa-cloud-arrow-down"></i><div><h3>Secure Multi-Site Data Orchestration</h3><p>Azure Data Factory and a centralized Self-Hosted Integration Runtime securely extracted data from regional on-premises hospitals without exposing internal firewalls.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-key"></i><div><h3>Protected Clinical Credentials</h3><p>Azure Key Vault secured connection credentials and patient-data strings within the ingestion framework.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-table-list"></i><div><h3>Metadata-Driven Ingestion</h3><p>A reusable ADF Control Table pattern used Lookup and ForEach activities to run daily incremental loads across hospital sites.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-database"></i><div><h3>Azure SQL Star Schema</h3><p>Unified patient and encounter data was loaded into an Azure SQL analytical warehouse centered on Fact_Encounters and detailed clinical dimensions.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-notes-medical"></i><div><h3>Clinical Data Standardization</h3><p>Local source values were normalized to ISO formats and mapped to ICD-10-CM, LOINC, and RxNorm, with Site_ID tags supporting regional comparisons.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-robot"></i><div><h3>Production ML Tournament</h3><p>A Scikit-Learn Gradient Boosting pipeline addressed multicollinearity, high-cardinality memory constraints, and missing clinical values through medical median imputation.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-chart-line"></i><div><h3>Enterprise AI Visualization</h3><p>A four-page Power BI suite linked serialized model risk probabilities back to the warehouse for financial tracking, specialty risk mapping, patient prioritization, and governance auditing.</p></div></article>
+</div>
+</div>
+</div></section>
+
+<section class="case-section case-section-alt"><div class="case-container">
+<div class="section-heading"><span>3.</span><h2>Business Impact</h2></div>
+
+<div class="impact-metric-grid ai-impact-grid">
+<article class="impact-metric-card"><i class="fa-solid fa-sack-dollar"></i><strong>$37M</strong><h3>Potential Cost Savings Identified</h3><p>The platform uncovered major network savings opportunities by accurately identifying patients inside the readmission penalization window.</p></article>
+<article class="impact-metric-card"><i class="fa-solid fa-bullseye"></i><strong>0.9748</strong><h3>ROC-AUC Model Performance</h3><p>The Gradient Boosting champion model achieved approximately 97.5% predictive confidence.</p></article>
+<article class="impact-metric-card"><i class="fa-solid fa-filter-circle-dollar"></i><strong>Top 5%</strong><h3>Highest-Risk Patients Targeted</h3><p>Clinical teams could replace a 100% discharge-review model with focused intervention for patients whose AI risk scores exceeded 80%.</p></article>
+</div>
+
+<div class="impact-cards impact-secondary-grid">
+<article class="impact-card"><i class="fa-solid fa-wave-square"></i><div><h3>Dominant Clinical Risk Signals Identified</h3><p>Acuity Score accounted for 47.7% of model importance, while Heart Failure diagnoses contributed 16.7%.</p></div></article>
+<article class="impact-card"><i class="fa-solid fa-list-check"></i><div><h3>Prescriptive Predicted-Actions Workflow</h3><p>Machine-learning flags gave discharge planners clear guidance such as “Immediate Intervention” and “Enhanced Discharge” before patients left the hospital.</p></div></article>
+</div>
+</div></section>
+
+<section class="case-section"><div class="case-container split-layout architecture-layout">
+<article class="diagram-card">
+<div class="section-heading"><span>4.</span><h2>Solution Architecture</h2></div>
+<div class="architecture-diagram">
+<div class="diagram-label">Predictive Clinical Risk Architecture</div>
+<div class="source-row">
+<div class="diagram-node"><i class="fa-solid fa-hospital"></i><span>Regional Cerner EHRs</span><small>Multi-Site Clinical Data</small></div>
+<div class="diagram-node"><i class="fa-solid fa-user-injured"></i><span>Patients &amp; Encounters</span><small>Demographics and Visits</small></div>
+<div class="diagram-node"><i class="fa-solid fa-file-medical"></i><span>Clinical Events</span><small>Diagnoses, Labs, Medications</small></div>
+</div>
+<div class="down-arrows"><span>↓</span><span>↓</span><span>↓</span></div>
+<div class="layer-row">
+<div class="diagram-node"><i class="fa-solid fa-cloud-arrow-down"></i><span>ADF + SHIR</span><small>Secure Incremental Ingestion</small></div>
+<b>→</b>
+<div class="diagram-node"><i class="fa-solid fa-database"></i><span>Azure SQL Star Schema</span><small>Unified Clinical Warehouse</small></div>
+<b>→</b>
+<div class="diagram-node"><i class="fa-solid fa-brain"></i><span>Gradient Boosting</span><small>Readmission Risk Scoring</small></div>
+</div>
+<div class="single-down">↓</div>
+<div class="diagram-node wide"><i class="fa-solid fa-chart-pie"></i><span>Power BI Clinical Risk &amp; Intervention Suite</span></div>
+</div>
+<p class="diagram-caption">The architecture securely unifies regional EHR data, standardizes clinical terminology, generates risk predictions, and delivers intervention-ready intelligence.</p>
+</article>
+
+<article class="diagram-card">
+<div class="section-heading"><span>5.</span><h2>Predictive Analytics Delivery Flow</h2></div>
+<div class="pipeline-flow">
+<div class="pipeline-step"><i class="fa-solid fa-hospital"></i><h3>Extract</h3><p>Regional EHR patient, encounter, and clinical-event data</p></div><b>→</b>
+<div class="pipeline-step"><i class="fa-solid fa-code-branch"></i><h3>Standardize</h3><p>ISO, ICD-10-CM, LOINC, RxNorm, and Site_ID mapping</p></div><b>→</b>
+<div class="pipeline-step"><i class="fa-solid fa-database"></i><h3>Unify</h3><p>Azure SQL star schema and daily incremental loads</p></div><b>→</b>
+<div class="pipeline-step"><i class="fa-solid fa-brain"></i><h3>Predict</h3><p>Gradient Boosting readmission-risk model</p></div><b>→</b>
+<div class="pipeline-step"><i class="fa-solid fa-user-nurse"></i><h3>Intervene</h3><p>Prioritized patient watchlists and predicted actions</p></div>
+</div>
+<p class="diagram-caption">A metadata-driven workflow converts fragmented regional data into actionable pre-discharge risk guidance.</p>
+</article>
+</div></section>
+
+<section class="case-section case-section-alt"><div class="case-container">
+<div class="section-heading"><span>6.</span><h2>Technology Stack</h2></div>
+<div class="tech-grid tech-grid-wide">
+<span>Azure Data Factory</span><span>Self-Hosted Integration Runtime</span><span>Azure Key Vault</span><span>Azure SQL Data Warehouse</span><span>Python</span><span>Scikit-Learn</span><span>Pandas</span><span>NumPy</span><span>Gradient Boosting</span><span>Power BI</span><span>DAX</span><span>ICD-10-CM</span><span>LOINC</span><span>RxNorm</span>
+</div>
+</div></section>
+
+<section class="case-section"><div class="case-container">
+<div class="section-heading"><span>7.</span><h2>Dashboard Gallery</h2></div>
+<div class="gallery-grid">
+<figure class="gallery-card gallery-card-wide"><img src="assets/case-studies/ai-clinical-risk-readmission/screenshots/executive-command-center.jpg" alt="Unity Health executive command center dashboard" loading="lazy"><figcaption>Executive command center with readmission rate, preventable risk cost, facility benchmarking, and payer mix</figcaption></figure>
+<figure class="gallery-card"><img src="assets/case-studies/ai-clinical-risk-readmission/screenshots/clinical-risk-analysis.jpg" alt="Clinical readmission risk analysis dashboard" loading="lazy"><figcaption>Clinical risk drivers, specialty patterns, and readmission analysis</figcaption></figure>
+<figure class="gallery-card"><img src="assets/case-studies/ai-clinical-risk-readmission/screenshots/patient-prioritization.jpg" alt="High-risk patient prioritization dashboard" loading="lazy"><figcaption>High-risk patient prioritization and predicted-action workflow</figcaption></figure>
+<figure class="gallery-card"><img src="assets/case-studies/ai-clinical-risk-readmission/screenshots/model-governance.jpg" alt="Machine learning model governance dashboard" loading="lazy"><figcaption>Model performance, feature importance, and governance audit view</figcaption></figure>
+</div>
+</div></section>
+
+<section class="case-section case-section-alt"><div class="case-container">
+<div class="section-heading"><span>8.</span><h2>Project Showcase</h2></div>
+<div class="showcase-grid">
+<article class="showcase-card"><h3>Live Power BI Dashboard</h3><div class="embed-frame"><iframe title="Power BI Dashboard" src="https://app.powerbi.com/view?r=REPLACE_WITH_PUBLIC_EMBED_LINK" loading="lazy" allowfullscreen="true"></iframe></div><p>Replace this placeholder with the public Power BI embed URL after publishing the report.</p></article>
+<article class="showcase-card"><h3>Video Walkthrough</h3><div class="embed-frame"><iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Video walkthrough placeholder" loading="lazy" allowfullscreen></iframe></div><p>Replace this generic YouTube URL after publishing the walkthrough.</p></article>
+</div>
+</div></section>
+
+<section class="case-section"><div class="case-container bottom-actions">
+<article class="repository-card"><i class="fa-brands fa-github repo-icon"></i><div><div class="section-heading compact"><span>9.</span><h2>GitHub Repository</h2></div><h3>Explore the Predictive Clinical Analytics Project</h3><p>The repository contains project documentation, pipeline details, machine-learning implementation context, screenshots, and supporting assets.</p></div><a class="primary-action" href="https://github.com/Atif2227/AI-Driven-Predictive-Analytics-for-Clinical-Risk-Patient-Readmission" target="_blank" rel="noopener noreferrer">View GitHub Repository ↗</a></article>
+<article class="other-cases-card"><div><h2>Explore More Case Studies</h2><p>Discover more healthcare analytics and enterprise data transformation projects.</p></div><a class="secondary-action" href="case-study.html">View Other Case Studies →</a></article>
+</div></section>
+
+</main>
+
+<footer class="site-footer"><div class="footer-container"><div class="footer-brand"><img src="assets/logo/logo-horizontal.png" alt="ANH logo" class="footer-logo"><div class="footer-brand-content"><p class="footer-name">ATIF NOORUL HASAN</p><p class="footer-title">DATA MODERNIZATION CONSULTANT</p><p class="footer-description">Empowering organizations with data-driven solutions for measurable impact.</p></div></div><div class="footer-contact"><a href="mailto:atif@atifdata.com" class="footer-contact-item"><i class="fa-regular fa-envelope"></i><span>atif@atifdata.com</span></a><div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i><span>Qatar</span></div><a href="https://www.linkedin.com/in/atifnhasan" class="footer-contact-item" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i><span>linkedin.com/in/atifnhasan</span></a><a href="https://github.com/atif2227" class="footer-contact-item" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><span>github.com/atif2227</span></a></div><div class="footer-legal"><p>© 2026 Atif Noorul Hasan. All rights reserved.</p><div class="footer-legal-links"><a href="privacy-policy.html">Privacy Policy</a><span>|</span><a href="terms-of-use.html">Terms of Use</a></div></div></div></footer>
+
+<script src="js/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform by Atif Noorul Hasan.">
+<title>Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform | Atif Noorul Hasan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/individual-case-study.css">
+<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+<header class="site-header"><div class="navbar-container">
+<a class="brand" href="index.html"><img src="assets/logo/logo-horizontal.png" alt="ANH logo" class="brand-logo"><span class="brand-copy"><span class="brand-name">ATIF NOORUL HASAN</span><span class="brand-title">DATA MODERNIZATION CONSULTANT</span></span></a>
+<button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button>
+<nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="services.html">Services</a><a class="nav-link active" href="case-study.html">Case Studies</a><a class="nav-link" href="about.html">About</a><a class="nav-link" href="contact.html">Contact</a></nav>
+</div></header>
+<main>
+
+<section class="case-hero"><div class="case-container case-hero-inner">
+<h1>Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform</h1>
+<p>Architected a governed cloud revenue-cycle analytics and machine learning platform that identifies denial root causes, quantifies value at risk, and prioritizes high-risk claims before payer submission.</p>
+<div class="hero-badges">
+<span><i class="fa-solid fa-file-invoice-dollar"></i>Revenue Cycle Intelligence</span>
+<span><i class="fa-solid fa-triangle-exclamation"></i>Denial Root-Cause Analysis</span>
+<span><i class="fa-solid fa-brain"></i>Pre-Submission Risk Prediction</span>
+<span><i class="fa-solid fa-shield-halved"></i>Leak-Proof ML Governance</span>
+<span><i class="fa-solid fa-sack-dollar"></i>$70.1M Value at Risk</span>
+</div></div></section>
+
+<section class="case-section"><div class="case-container split-layout">
+<div class="section-panel">
+<div class="section-heading"><span>1.</span><h2>Business Challenge</h2></div>
+<p class="section-intro">MapleCare Health faced major revenue leakage and cash-flow delays because claims were partially paid or denied after encounters without a unified analytical framework.</p>
+<div class="challenge-grid claim-challenge-grid">
+<article class="mini-card"><i class="fa-solid fa-eye-slash"></i><h3>Fragmented Financial Visibility</h3><p>Finance leaders had limited insight into why claims were rejected or how much net revenue was exposed across the billing cycle.</p></article>
+<article class="mini-card"><i class="fa-solid fa-people-arrows-left-right"></i><h3>Disconnected Revenue-Cycle Operations</h3><p>Administrative, billing, coding, and clinical documentation teams operated separately, increasing submission delays and coding errors.</p></article>
+<article class="mini-card"><i class="fa-solid fa-rotate-left"></i><h3>Reactive Appeal Strategy</h3><p>Staff spent excessive effort appealing denials after submission rather than preventing high-risk claims before they reached payers.</p></article>
+<article class="mini-card"><i class="fa-solid fa-shield-halved"></i><h3>Machine Learning Governance Barriers</h3><p>Opaque or ungoverned predictive approaches risked data leakage, over-automation, legal non-compliance, and untrustworthy decisions.</p></article>
+</div></div>
+
+<div class="section-panel section-panel-bordered">
+<div class="section-heading"><span>2.</span><h2>Solution</h2></div>
+<p class="section-intro">A governed end-to-end cloud warehouse, analytical layer, and predictive model moved the organization from retrospective denial review to proactive risk mitigation.</p>
+<div class="solution-grid">
+<article class="feature-item"><i class="fa-solid fa-cloud-arrow-down"></i><div><h3>Secure Nightly ADF Orchestration</h3><p>PL_Claims_Ingestion_MapleCare ingested daily ADLS Gen2 claims extracts into Azure SQL using Managed Identities.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-clipboard-list"></i><div><h3>Automated Audit Framework</h3><p>dbo.ingestion_audit captured row counts, file metadata, timestamps, and pipeline failures for end-to-end observability.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-table"></i><div><h3>Claim-Line Star Schema</h3><p>fact_claim_line represented one billed service line and connected to conformed patient, provider, payer, facility, denial, CPT, ICD, and date dimensions.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-magnifying-glass-chart"></i><div><h3>Statistical &amp; Temporal Profiling</h3><p>Python EDA validated billing logic, calculated submit_lag_days, and monitored high-value outliers with the IQR method without deleting them.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-gears"></i><div><h3>Pre-Submission Feature Engineering</h3><p>Discount severity, realization efficiency, financial-volume flags, and safe historical aggregates were engineered from pre-adjudication information.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-shield-virus"></i><div><h3>Leak-Proof Predictive Modeling</h3><p>Post-adjudication proxies such as denial_amount and paid_to_allowed_ratio were removed before Gradient Boosting and Logistic Regression evaluation.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-chart-pie"></i><div><h3>Six-Page Executive Intelligence</h3><p>Power BI delivered cash-flow, payer-contract, root-cause, ML risk, documentation, and remediation perspectives.</p></div></article>
+<article class="feature-item"><i class="fa-solid fa-bell"></i><div><h3>Failure Alerts &amp; Operational Routing</h3><p>Azure Logic Apps routed pipeline errors to administrative Teams channels for rapid response.</p></div></article>
+</div></div></div></section>
+
+<section class="case-section case-section-alt"><div class="case-container">
+<div class="section-heading"><span>3.</span><h2>Business Impact</h2></div>
+<div class="impact-metric-grid claim-impact-grid">
+<article class="impact-metric-card"><i class="fa-solid fa-database"></i><strong>120,000</strong><h3>Claim Rows Unified</h3><p>The platform converted messy transactions into a governed enterprise source of truth.</p></article>
+<article class="impact-metric-card"><i class="fa-solid fa-file-invoice-dollar"></i><strong>$508.6M</strong><h3>Total Charges Centralized</h3><p>Enterprise claims exposure became visible in one analytical environment.</p></article>
+<article class="impact-metric-card"><i class="fa-solid fa-money-check-dollar"></i><strong>$299.0M</strong><h3>Total Paid Volume Centralized</h3><p>Finance teams gained clear visibility into realized reimbursement.</p></article>
+<article class="impact-metric-card"><i class="fa-solid fa-triangle-exclamation"></i><strong>$70.1M</strong><h3>Value at Risk Quantified</h3><p>The platform clearly exposed denied or underpaid financial value.</p></article>
+<article class="impact-metric-card"><i class="fa-solid fa-chart-line"></i><strong>43.35%</strong><h3>Overall Denial Rate Explained</h3><p>Denial patterns were linked to coding completeness, billing lag, and payer-contract variation.</p></article>
+<article class="impact-metric-card"><i class="fa-solid fa-building-shield"></i><strong>47.25%</strong><h3>Private B Denial Rate</h3><p>Commercial contract behavior was benchmarked against other payers.</p></article>
+<article class="impact-metric-card"><i class="fa-solid fa-landmark"></i><strong>40.12%</strong><h3>OHIP Denial Rate</h3><p>Payer-level comparison revealed material contract variation.</p></article>
+<article class="impact-metric-card"><i class="fa-solid fa-filter-circle-dollar"></i><strong>20.3%</strong><h3>High-Risk Claims Prioritized</h3><p>The decision-support engine isolated the exact high-risk tier before submission.</p></article>
+<article class="impact-metric-card"><i class="fa-solid fa-sack-dollar"></i><strong>$14.2M</strong><h3>High-Risk Exposure Identified</h3><p>The high-risk claim tier represented a significant preventable revenue opportunity.</p></article>
+</div>
+<div class="impact-cards impact-secondary-grid">
+<article class="impact-card"><i class="fa-solid fa-people-group"></i><div><h3>Operational Staff Alignment</h3><p>Billing analysts gained a prioritized pre-submission queue with measurable SLA targets for coding and clinical documentation teams.</p></div></article>
+</div></div></section>
+
+<section class="case-section"><div class="case-container split-layout architecture-layout">
+<article class="diagram-card"><div class="section-heading"><span>4.</span><h2>Solution Architecture</h2></div>
+<div class="architecture-diagram"><div class="diagram-label">Healthcare Claim Denial Intelligence Architecture</div>
+<div class="source-row">
+<div class="diagram-node"><i class="fa-solid fa-file-csv"></i><span>Daily Claims Extracts</span><small>Headers and Service Lines</small></div>
+<div class="diagram-node"><i class="fa-solid fa-file-medical"></i><span>Clinical Coding</span><small>ICD, CPT, Documentation</small></div>
+<div class="diagram-node"><i class="fa-solid fa-building-shield"></i><span>Payer Contracts</span><small>Allowed, Paid, and Denied</small></div>
+</div><div class="down-arrows"><span>↓</span><span>↓</span><span>↓</span></div>
+<div class="layer-row">
+<div class="diagram-node"><i class="fa-solid fa-cloud-arrow-down"></i><span>ADF + ADLS Gen2</span><small>Secure Nightly Ingestion</small></div><b>→</b>
+<div class="diagram-node"><i class="fa-solid fa-database"></i><span>Azure SQL Star Schema</span><small>Claim-Line Source of Truth</small></div><b>→</b>
+<div class="diagram-node"><i class="fa-solid fa-brain"></i><span>Governed Risk Model</span><small>Pre-Submission Tiering</small></div>
+</div><div class="single-down">↓</div>
+<div class="diagram-node wide"><i class="fa-solid fa-chart-pie"></i><span>Power BI Denial Intelligence &amp; Remediation Suite</span></div>
+</div><p class="diagram-caption">A governed cloud architecture connects claims ingestion, audit logging, warehouse modeling, risk prediction, and executive remediation.</p></article>
+
+<article class="diagram-card"><div class="section-heading"><span>5.</span><h2>Analytics Delivery Flow</h2></div>
+<div class="pipeline-flow">
+<div class="pipeline-step"><i class="fa-solid fa-file-csv"></i><h3>Ingest</h3><p>Daily claims header and line files</p></div><b>→</b>
+<div class="pipeline-step"><i class="fa-solid fa-clipboard-check"></i><h3>Audit</h3><p>Rows, files, timestamps, and failures</p></div><b>→</b>
+<div class="pipeline-step"><i class="fa-solid fa-table"></i><h3>Warehouse</h3><p>Claim-line star schema and conformed dimensions</p></div><b>→</b>
+<div class="pipeline-step"><i class="fa-solid fa-brain"></i><h3>Predict</h3><p>Leak-proof pre-submission risk model</p></div><b>→</b>
+<div class="pipeline-step"><i class="fa-solid fa-list-check"></i><h3>Act</h3><p>Prioritized remediation queue and SLA targets</p></div>
+</div><p class="diagram-caption">Pipeline failures are logged and routed through Azure Logic Apps to administrative Teams channels.</p></article>
+</div></section>
+
+<section class="case-section case-section-alt"><div class="case-container">
+<div class="section-heading"><span>6.</span><h2>Technology Stack</h2></div>
+<div class="tech-grid tech-grid-wide">
+<span>Azure Data Factory</span><span>ADLS Gen2</span><span>Azure SQL Database</span><span>SQL Server / SSMS</span><span>Managed Identities</span><span>Python</span><span>Jupyter Notebooks</span><span>Pandas</span><span>NumPy</span><span>Scikit-Learn</span><span>Gradient Boosting</span><span>Logistic Regression</span><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Azure Logic Apps</span>
+</div></div></section>
+
+<section class="case-section"><div class="case-container">
+<div class="section-heading"><span>7.</span><h2>Dashboard Gallery</h2></div>
+<div class="gallery-grid"><figure class="gallery-card gallery-card-wide"><img src="assets/case-studies/healthcare-claim-denial/screenshots/dashboard-01.jpg" alt="Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform dashboard 1" loading="lazy"><figcaption>Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform — dashboard view 1</figcaption></figure><figure class="gallery-card"><img src="assets/case-studies/healthcare-claim-denial/screenshots/dashboard-02.jpg" alt="Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform dashboard 2" loading="lazy"><figcaption>Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform — dashboard view 2</figcaption></figure><figure class="gallery-card"><img src="assets/case-studies/healthcare-claim-denial/screenshots/dashboard-03.jpg" alt="Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform dashboard 3" loading="lazy"><figcaption>Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform — dashboard view 3</figcaption></figure><figure class="gallery-card"><img src="assets/case-studies/healthcare-claim-denial/screenshots/dashboard-04.jpg" alt="Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform dashboard 4" loading="lazy"><figcaption>Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform — dashboard view 4</figcaption></figure><figure class="gallery-card"><img src="assets/case-studies/healthcare-claim-denial/screenshots/dashboard-05.jpg" alt="Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform dashboard 5" loading="lazy"><figcaption>Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform — dashboard view 5</figcaption></figure><figure class="gallery-card"><img src="assets/case-studies/healthcare-claim-denial/screenshots/dashboard-06.jpg" alt="Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform dashboard 6" loading="lazy"><figcaption>Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform — dashboard view 6</figcaption></figure><figure class="gallery-card"><img src="assets/case-studies/healthcare-claim-denial/screenshots/dashboard-07.jpg" alt="Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform dashboard 7" loading="lazy"><figcaption>Healthcare Claim Denial Intelligence & Pre-Submission Risk Prediction Platform — dashboard view 7</figcaption></figure></div>
+</div></section>
+
+<section class="case-section case-section-alt"><div class="case-container">
+<div class="section-heading"><span>8.</span><h2>Project Showcase</h2></div>
+<div class="showcase-grid">
+<article class="showcase-card"><h3>Live Power BI Dashboard</h3><div class="embed-frame"><iframe title="Power BI Dashboard" src="https://app.powerbi.com/view?r=REPLACE_WITH_PUBLIC_EMBED_LINK" loading="lazy" allowfullscreen="true"></iframe></div><p>Replace this placeholder with the public Power BI embed URL after publishing the report.</p></article>
+<article class="showcase-card"><h3>Video Walkthrough</h3><div class="embed-frame"><iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Video walkthrough placeholder" loading="lazy" allowfullscreen></iframe></div><p>Replace this generic YouTube URL after publishing the walkthrough.</p></article>
+</div></div></section>
+
+<section class="case-section"><div class="case-container bottom-actions">
+<article class="repository-card"><i class="fa-brands fa-github repo-icon"></i><div><div class="section-heading compact"><span>9.</span><h2>GitHub Repository</h2></div><h3>Explore the Claim Denial Intelligence Project</h3><p>The repository contains project documentation, pipeline details, notebooks, screenshots, and predictive-model implementation context.</p></div><a class="primary-action" href="https://github.com/Atif2227/MapleCare-Health-Claim-Denial-Root-Cause-Analysis-Claim-Denial-Risk-Prediction" target="_blank" rel="noopener noreferrer">View GitHub Repository ↗</a></article>
+<article class="other-cases-card"><div><h2>Explore More Case Studies</h2><p>Discover more healthcare analytics and enterprise data transformation projects.</p></div><a class="secondary-action" href="case-study.html">View Other Case Studies →</a></article>
+</div></section>
+
+</main>
+<footer class="site-footer"><div class="footer-container"><div class="footer-brand"><img src="assets/logo/logo-horizontal.png" alt="ANH logo" class="footer-logo"><div class="footer-brand-content"><p class="footer-name">ATIF NOORUL HASAN</p><p class="footer-title">DATA MODERNIZATION CONSULTANT</p><p class="footer-description">Empowering organizations with data-driven solutions for measurable impact.</p></div></div><div class="footer-contact"><a href="mailto:atif@atifdata.com" class="footer-contact-item"><i class="fa-regular fa-envelope"></i><span>atif@atifdata.com</span></a><div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i><span>Qatar</span></div><a href="https://www.linkedin.com/in/atifnhasan" class="footer-contact-item" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i><span>linkedin.com/in/atifnhasan</span></a><a href="https://github.com/atif2227" class="footer-contact-item" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><span>github.com/atif2227</span></a></div><div class="footer-legal"><p>© 2026 Atif Noorul Hasan. All rights reserved.</p><div class="footer-legal-links"><a href="privacy-policy.html">Privacy Policy</a><span>|</span><a href="terms-of-use.html">Terms of Use</a></div></div></div></footer>
+<script src="js/navbar.js"></script>
+</body>
+</html>

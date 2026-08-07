@@ -1,0 +1,14 @@
+assets/
+└── services/
+    ├── hero/
+    │   └── services-hero-illustration.png
+    │
+    ├── cards/
+    │   ├── enterprise-data-modernization.png
+    │   ├── cloud-data-platforms.png
+    │   ├── etl-data-integration.png
+    │   ├── business-intelligence-analytics.png
+    │   ├── healthcare-analytics.png
+    │   └── data-governance-ai-readiness.png
+    │
+   

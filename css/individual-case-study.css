@@ -1,0 +1,430 @@
+/* Individual Case Study */
+.case-hero,.case-section{background:radial-gradient(circle at 50% 0%,rgba(34,211,197,.035),transparent 35%),#071018;border-bottom:1px solid rgba(255,255,255,.08)}
+.case-section-alt{background:radial-gradient(circle at 50% 0%,rgba(34,211,197,.03),transparent 36%),#09121a}
+.case-container{width:min(calc(100% - 48px),var(--container-width));margin:auto}
+.case-hero-inner{min-height:300px;padding:44px 0 38px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.case-hero h1{max-width:1000px;margin:0;font-size:clamp(2.4rem,4.6vw,4.8rem);line-height:1.08;letter-spacing:-.045em}
+.case-hero p{max-width:820px;margin:24px 0 0;color:var(--text-muted);font-size:1rem;line-height:1.72}
+.case-section{padding:30px 0 36px}
+.split-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.section-panel-bordered,.architecture-layout .diagram-card+ .diagram-card{padding-left:28px;border-left:1px solid rgba(255,255,255,.1)}
+.section-heading{position:relative;display:flex;align-items:baseline;gap:8px;margin-bottom:14px;padding-bottom:10px}
+.section-heading span,.section-heading h2{margin:0;font-size:clamp(1.35rem,2vw,2rem);line-height:1.2}
+.section-heading:after{content:"";position:absolute;left:0;bottom:0;width:48px;height:2px;background:var(--accent);box-shadow:0 0 8px rgba(34,211,197,.5)}
+.section-heading.compact{margin-bottom:8px}
+.section-intro{margin:0 0 20px;color:var(--text-muted);font-size:.9rem;line-height:1.65}
+.challenge-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.mini-card{min-height:270px;padding:18px 14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:8px}
+.mini-card i{color:var(--accent);font-size:1.8rem}.mini-card h3{margin:18px 0 0;font-size:.88rem;line-height:1.35}.mini-card p{margin:12px 0 0;color:var(--text-muted);font-size:.72rem;line-height:1.55}
+.solution-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 16px}
+.feature-item{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px}.feature-item i{color:var(--accent);font-size:1.05rem}.feature-item h3{margin:0;font-size:.82rem}.feature-item p{margin:7px 0 0;color:var(--text-muted);font-size:.68rem;line-height:1.5}
+.architecture-diagram{min-height:410px;padding:22px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(180deg,rgba(255,255,255,.028),rgba(255,255,255,.012));border:1px solid rgba(34,211,197,.22);border-radius:9px}
+.diagram-label{text-align:center;font-size:.72rem;font-weight:700;margin-bottom:10px}.source-row,.layer-row{display:flex;align-items:center;justify-content:center;gap:12px}
+.diagram-node{padding:12px 14px;display:flex;flex-direction:column;align-items:center;gap:7px;text-align:center;background:#0d1720;border:1px solid rgba(255,255,255,.1);border-radius:7px}.diagram-node i{color:var(--accent)}.diagram-node span{font-size:.75rem;font-weight:700}.diagram-node small{color:var(--text-muted);font-size:.62rem}
+.down-arrows{display:flex;justify-content:space-around;color:var(--accent);font-size:1.35rem;padding-inline:60px}.layer-row b,.single-down{color:var(--accent);font-size:1.35rem;text-align:center}.single-down{margin:5px 0}.wide{width:min(72%,360px);margin:auto}.bronze{border-color:rgba(196,124,74,.35)}.silver{border-color:rgba(210,220,230,.25)}.gold{border-color:rgba(235,191,55,.35)}
+.diagram-caption{margin:16px 0 0;padding-top:14px;border-top:1px solid rgba(34,211,197,.25);text-align:center;color:var(--text-muted);font-size:.76rem;line-height:1.55}
+.pipeline-flow{min-height:410px;display:flex;align-items:center;justify-content:space-between;gap:8px}.pipeline-step{width:18%;min-height:230px;padding:18px 10px;text-align:center;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:8px}.pipeline-step i{color:var(--accent);font-size:2rem}.pipeline-step h3{margin:16px 0 0;font-size:.82rem}.pipeline-step p{margin:10px 0 0;color:var(--text-muted);font-size:.67rem;line-height:1.55}.pipeline-flow b{color:var(--accent);font-size:1.25rem}
+.impact-cards{display:grid;gap:12px}
+.impact-card{padding:16px;display:grid;grid-template-columns:32px minmax(0,1fr);gap:12px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.09);border-radius:7px}
+.impact-card i{color:var(--accent);font-size:1.15rem;padding-top:2px}
+.impact-card h3{margin:0;color:var(--text-primary);font-size:.84rem;line-height:1.4}
+.impact-card p{margin:7px 0 0;color:var(--text-muted);font-size:.74rem;line-height:1.55}
+.impact-list{margin:0;padding:0;list-style:none;display:grid;gap:15px}.impact-list li{position:relative;padding-left:26px;color:var(--text-muted);font-size:.82rem;line-height:1.5}.impact-list li:before{content:"✓";position:absolute;left:0;color:var(--accent)}
+.tech-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.tech-grid span{min-height:46px;padding:10px 12px;display:flex;align-items:center;color:var(--text-primary);background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.09);border-radius:6px;font-size:.75rem}
+.showcase-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(320px,.75fr);gap:18px}.showcase-card{padding:18px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:9px}.showcase-card h3{width:max-content;margin:0 0 14px;padding-bottom:8px;color:var(--accent);font-size:1rem;border-bottom:2px solid var(--accent)}.embed-frame{position:relative;aspect-ratio:16/9;overflow:hidden;background:#03080c;border:1px solid rgba(255,255,255,.12);border-radius:7px}.embed-frame iframe{width:100%;height:100%;border:0;display:block}.showcase-card p{margin:12px 0 0;color:var(--text-muted);font-size:.75rem;line-height:1.55;text-align:center}
+.bottom-actions{display:grid;gap:16px}.repository-card{padding:22px;display:grid;grid-template-columns:90px minmax(0,1fr) auto;align-items:center;gap:24px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:9px}.repo-icon{font-size:4rem}.repository-card h3{margin:0;color:var(--accent);font-size:1rem}.repository-card p{margin:10px 0 0;color:var(--text-muted);font-size:.78rem;line-height:1.6}
+.primary-action,.secondary-action{min-height:50px;padding:0 22px;display:inline-flex;align-items:center;justify-content:center;border-radius:5px;font-size:.8rem;font-weight:700;text-decoration:none;transition:.2s ease}.primary-action{color:#041113;background:var(--accent);border:1px solid var(--accent)}.secondary-action{color:var(--text-primary);border:1px solid var(--accent)}.primary-action:hover,.secondary-action:hover{transform:translateY(-2px)}.secondary-action:hover{color:#041113;background:var(--accent)}
+.other-cases-card{min-height:110px;padding:24px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;background:linear-gradient(90deg,rgba(34,211,197,.18),rgba(34,211,197,.06));border:1px solid rgba(34,211,197,.55);border-radius:9px}.other-cases-card h2{margin:0;font-size:1.35rem}.other-cases-card p{margin:8px 0 0;color:var(--text-muted);font-size:.8rem}
+@media(max-width:1100px){.split-layout{grid-template-columns:1fr}.section-panel-bordered,.architecture-layout .diagram-card+ .diagram-card{padding-left:0;padding-top:28px;border-left:0;border-top:1px solid rgba(255,255,255,.1)}.showcase-grid{grid-template-columns:1fr}.repository-card{grid-template-columns:72px minmax(0,1fr)}.repository-card .primary-action{grid-column:2;justify-self:start}}
+@media(max-width:1180px){.challenge-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:820px){.challenge-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.solution-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pipeline-flow{flex-wrap:wrap;justify-content:center}.pipeline-step{width:30%;min-width:180px}.pipeline-flow b{display:none}.tech-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.case-container{width:min(calc(100% - 28px),var(--container-width))}.case-hero-inner{min-height:auto;padding:32px 0 28px}.case-hero h1{font-size:clamp(2rem,10vw,3rem)}.case-hero p{font-size:.9rem}.case-section{padding:26px 0 30px}.challenge-grid,.solution-grid,.tech-grid{grid-template-columns:1fr}.mini-card{min-height:auto}.source-row,.layer-row{flex-direction:column}.down-arrows{display:none}.layer-row b{transform:rotate(90deg)}.diagram-node,.wide{width:100%}.pipeline-step{width:100%;min-width:0;min-height:auto}.repository-card{grid-template-columns:1fr;text-align:center}.repo-icon{margin:auto}.repository-card .primary-action{grid-column:auto;justify-self:stretch}.other-cases-card{flex-direction:column;text-align:center}.secondary-action{width:100%}}
+@media(max-width:420px){.case-container{width:min(calc(100% - 22px),var(--container-width))}}
+
+
+.hero-badges{
+  margin-top:24px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+}
+.hero-badges span{
+  min-height:40px;
+  padding:8px 14px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  color:var(--text-primary);
+  background:rgba(255,255,255,.025);
+  border:1px solid rgba(34,211,197,.42);
+  border-radius:999px;
+  font-size:.72rem;
+  font-weight:600;
+}
+.hero-badges i{color:var(--accent)}
+.python-node{border-color:rgba(55,118,171,.4)}
+.sql-node{border-color:rgba(206,70,70,.35)}
+.view-node{border-color:rgba(34,211,197,.35)}
+@media(max-width:720px){
+  .hero-badges{gap:8px}
+  .hero-badges span{width:100%;max-width:340px;min-height:44px}
+}
+
+.healthcare-node{border-color:rgba(34,211,197,.38)}.his-node{border-color:rgba(78,156,255,.35)}.postgres-node{border-color:rgba(64,116,181,.38)}.bi-node{border-color:rgba(245,196,47,.34)}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.gallery-card{margin:0;padding:14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:9px}
+.gallery-card img{width:100%;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12)}
+.gallery-card figcaption{margin-top:10px;color:var(--text-muted);font-size:.76rem;text-align:center}.gallery-card-wide{grid-column:1/-1}
+.module-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.module-card{min-height:170px;padding:16px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:8px}
+.module-card i{color:var(--accent);font-size:1.3rem}.module-card h3{margin:14px 0 0;font-size:.86rem}.module-card p{margin:8px 0 0;color:var(--text-muted);font-size:.72rem;line-height:1.55}
+@media(max-width:900px){.module-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:720px){.gallery-grid,.module-grid{grid-template-columns:1fr}.gallery-card-wide{grid-column:auto}}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.gallery-card{margin:0;padding:14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:9px}
+.gallery-card img{width:100%;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12)}
+.gallery-card figcaption{margin-top:10px;color:var(--text-muted);font-size:.76rem;text-align:center}
+.gallery-card-wide{grid-column:1/-1}
+@media(max-width:720px){.gallery-grid{grid-template-columns:1fr}.gallery-card-wide{grid-column:auto}}
+
+
+/* Final healthcare case-study additions */
+.project-challenge-grid{grid-template-columns:repeat(auto-fit,minmax(155px,1fr))}
+.project-challenge-grid .mini-card{min-height:240px}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.gallery-card{margin:0;padding:14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:9px}
+.gallery-card img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12)}
+.gallery-card figcaption{margin-top:10px;color:var(--text-muted);font-size:.76rem;line-height:1.5;text-align:center}
+.gallery-card-wide{grid-column:1/-1}
+@media(max-width:1100px){.project-challenge-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:820px){.project-challenge-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.project-challenge-grid,.gallery-grid{grid-template-columns:1fr}.gallery-card-wide{grid-column:auto}.project-challenge-grid .mini-card{min-height:auto}}
+
+
+/* Microsoft Fabric quantified impact and image panels */
+.impact-metric-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:14px;
+}
+.impact-metric-card{
+  min-height:220px;
+  padding:20px 16px;
+  text-align:center;
+  background:linear-gradient(180deg,rgba(34,211,197,.08),rgba(255,255,255,.015));
+  border:1px solid rgba(34,211,197,.28);
+  border-radius:9px;
+}
+.impact-metric-card i{color:var(--accent);font-size:1.7rem}
+.impact-metric-card strong{display:block;margin-top:14px;color:var(--accent);font-size:clamp(1.7rem,3vw,2.7rem);line-height:1}
+.impact-metric-card h3{margin:12px 0 0;font-size:.9rem}
+.impact-metric-card p{margin:10px 0 0;color:var(--text-muted);font-size:.72rem;line-height:1.55}
+.impact-secondary-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:16px}
+.evidence-frame{
+  min-height:420px;
+  padding:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  background:#eef2f4;
+  border:1px solid rgba(34,211,197,.25);
+  border-radius:9px;
+}
+.evidence-frame img{width:100%;height:auto;display:block;object-fit:contain;border-radius:5px}
+.tech-grid-wide{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:1100px){
+  .impact-metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tech-grid-wide{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:720px){
+  .impact-metric-grid,.impact-secondary-grid,.tech-grid-wide{grid-template-columns:1fr}
+  .impact-metric-card{min-height:auto}
+  .evidence-frame{min-height:auto;padding:8px}
+}
+
+
+/* On-premises case study additions */
+.onprem-challenge-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.impact-metric-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:14px;
+}
+.impact-metric-card{
+  min-height:220px;
+  padding:20px 16px;
+  text-align:center;
+  background:linear-gradient(180deg,rgba(34,211,197,.08),rgba(255,255,255,.015));
+  border:1px solid rgba(34,211,197,.28);
+  border-radius:9px;
+}
+.impact-metric-card i{color:var(--accent);font-size:1.7rem}
+.impact-metric-card strong{display:block;margin-top:14px;color:var(--accent);font-size:clamp(1.7rem,3vw,2.7rem);line-height:1}
+.impact-metric-card h3{margin:12px 0 0;font-size:.9rem}
+.impact-metric-card p{margin:10px 0 0;color:var(--text-muted);font-size:.72rem;line-height:1.55}
+.impact-secondary-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:16px}
+.evidence-frame{
+  min-height:420px;
+  padding:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  background:#f0f3f5;
+  border:1px solid rgba(34,211,197,.25);
+  border-radius:9px;
+}
+.evidence-frame img{width:100%;height:auto;display:block;object-fit:contain;border-radius:5px}
+.onprem-pipeline-frame img{max-height:560px}
+.tech-grid-wide{grid-template-columns:repeat(5,minmax(0,1fr))}
+@media(max-width:1100px){
+  .onprem-challenge-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .impact-metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tech-grid-wide{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:720px){
+  .onprem-challenge-grid,.impact-metric-grid,.impact-secondary-grid,.tech-grid-wide{grid-template-columns:1fr}
+  .impact-metric-card{min-height:auto}
+  .evidence-frame{min-height:auto;padding:8px}
+}
+
+
+/* Enterprise Healthcare Analytics additions */
+.healthcare-challenge-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.impact-metric-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+}
+.impact-metric-card{
+  min-height:220px;
+  padding:20px 16px;
+  text-align:center;
+  background:linear-gradient(180deg,rgba(34,211,197,.08),rgba(255,255,255,.015));
+  border:1px solid rgba(34,211,197,.28);
+  border-radius:9px;
+}
+.impact-metric-card i{color:var(--accent);font-size:1.7rem}
+.impact-metric-card strong{display:block;margin-top:14px;color:var(--accent);font-size:clamp(1.7rem,3vw,2.7rem);line-height:1}
+.impact-metric-card h3{margin:12px 0 0;font-size:.9rem}
+.impact-metric-card p{margin:10px 0 0;color:var(--text-muted);font-size:.72rem;line-height:1.55}
+.impact-secondary-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:16px}
+.tech-grid-wide{grid-template-columns:repeat(5,minmax(0,1fr))}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.gallery-card{margin:0;padding:14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:9px}
+.gallery-card img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12)}
+.gallery-card figcaption{margin-top:10px;color:var(--text-muted);font-size:.76rem;line-height:1.5;text-align:center}
+.gallery-card-wide{grid-column:1/-1}
+@media(max-width:1100px){
+  .healthcare-challenge-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tech-grid-wide{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:820px){
+  .impact-metric-grid{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .healthcare-challenge-grid,.impact-secondary-grid,.tech-grid-wide,.gallery-grid{grid-template-columns:1fr}
+  .gallery-card-wide{grid-column:auto}
+  .impact-metric-card{min-height:auto}
+}
+
+
+/* Global Talent Competitiveness case study additions */
+.demographics-challenge-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.demographics-impact-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.demographics-impact-grid .impact-card{min-height:150px}
+.impact-note{
+  margin:16px 0 0;
+  padding:13px 15px;
+  color:var(--text-muted);
+  background:rgba(255,255,255,.025);
+  border-left:3px solid var(--accent);
+  border-radius:5px;
+  font-size:.76rem;
+  line-height:1.6;
+}
+.tech-grid-wide{grid-template-columns:repeat(5,minmax(0,1fr))}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.gallery-card{margin:0;padding:14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:9px}
+.gallery-card img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12)}
+.gallery-card figcaption{margin-top:10px;color:var(--text-muted);font-size:.76rem;line-height:1.5;text-align:center}
+.gallery-card-wide{grid-column:1/-1}
+@media(max-width:1100px){
+  .demographics-challenge-grid,.demographics-impact-grid{grid-template-columns:1fr}
+  .tech-grid-wide{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:720px){
+  .tech-grid-wide,.gallery-grid{grid-template-columns:1fr}
+  .gallery-card-wide{grid-column:auto}
+}
+
+
+/* AI Clinical Risk & Readmission case study additions */
+.ai-challenge-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.impact-metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.impact-metric-card{min-height:220px;padding:20px 16px;text-align:center;background:linear-gradient(180deg,rgba(34,211,197,.08),rgba(255,255,255,.015));border:1px solid rgba(34,211,197,.28);border-radius:9px}
+.impact-metric-card i{color:var(--accent);font-size:1.7rem}
+.impact-metric-card strong{display:block;margin-top:14px;color:var(--accent);font-size:clamp(1.7rem,3vw,2.7rem);line-height:1}
+.impact-metric-card h3{margin:12px 0 0;font-size:.9rem}
+.impact-metric-card p{margin:10px 0 0;color:var(--text-muted);font-size:.72rem;line-height:1.55}
+.impact-secondary-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:16px}
+.tech-grid-wide{grid-template-columns:repeat(5,minmax(0,1fr))}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.gallery-card{margin:0;padding:14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:9px}
+.gallery-card img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12)}
+.gallery-card figcaption{margin-top:10px;color:var(--text-muted);font-size:.76rem;line-height:1.5;text-align:center}
+.gallery-card-wide{grid-column:1/-1}
+@media(max-width:1100px){.ai-challenge-grid{grid-template-columns:1fr}.tech-grid-wide{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:820px){.impact-metric-grid{grid-template-columns:1fr}}
+@media(max-width:720px){.impact-secondary-grid,.tech-grid-wide,.gallery-grid{grid-template-columns:1fr}.gallery-card-wide{grid-column:auto}.impact-metric-card{min-height:auto}}
+
+
+/* Diabetes longitudinal monitoring additions */
+.diabetes-challenge-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.impact-metric-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.impact-metric-card{min-height:220px;padding:20px 16px;text-align:center;background:linear-gradient(180deg,rgba(34,211,197,.08),rgba(255,255,255,.015));border:1px solid rgba(34,211,197,.28);border-radius:9px}
+.impact-metric-card i{color:var(--accent);font-size:1.7rem}
+.impact-metric-card strong{display:block;margin-top:14px;color:var(--accent);font-size:clamp(1.7rem,3vw,2.7rem);line-height:1}
+.impact-metric-card h3{margin:12px 0 0;font-size:.9rem}
+.impact-metric-card p{margin:10px 0 0;color:var(--text-muted);font-size:.72rem;line-height:1.55}
+.impact-secondary-grid{grid-template-columns:1fr;margin-top:16px}
+.tech-grid-wide{grid-template-columns:repeat(4,minmax(0,1fr))}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.gallery-card{margin:0;padding:14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:9px}
+.gallery-card img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12)}
+.gallery-card figcaption{margin-top:10px;color:var(--text-muted);font-size:.76rem;line-height:1.5;text-align:center}
+.gallery-card-wide{grid-column:1/-1}
+@media(max-width:1200px){.impact-metric-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:900px){.diabetes-challenge-grid,.impact-metric-grid{grid-template-columns:1fr}.tech-grid-wide{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.tech-grid-wide,.gallery-grid{grid-template-columns:1fr}.gallery-card-wide{grid-column:auto}.impact-metric-card{min-height:auto}}
+
+
+/* Healthcare workforce training additions */
+.training-challenge-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.impact-metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.impact-metric-card{min-height:220px;padding:20px 16px;text-align:center;background:linear-gradient(180deg,rgba(34,211,197,.08),rgba(255,255,255,.015));border:1px solid rgba(34,211,197,.28);border-radius:9px}
+.impact-metric-card i{color:var(--accent);font-size:1.7rem}
+.impact-metric-card strong{display:block;margin-top:14px;color:var(--accent);font-size:clamp(1.55rem,3vw,2.5rem);line-height:1}
+.impact-metric-card h3{margin:12px 0 0;font-size:.9rem}
+.impact-metric-card p{margin:10px 0 0;color:var(--text-muted);font-size:.72rem;line-height:1.55}
+.evidence-frame{min-height:420px;padding:12px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#f2f4f6;border:1px solid rgba(34,211,197,.25);border-radius:9px}
+.evidence-frame img{width:100%;height:auto;display:block;object-fit:contain;border-radius:5px}
+.tech-grid-wide{grid-template-columns:repeat(5,minmax(0,1fr))}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.gallery-card{margin:0;padding:14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:9px}
+.gallery-card img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12)}
+.gallery-card figcaption{margin-top:10px;color:var(--text-muted);font-size:.76rem;line-height:1.5;text-align:center}
+.gallery-card-wide{grid-column:1/-1}
+@media(max-width:1100px){.training-challenge-grid,.impact-metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tech-grid-wide{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:720px){.training-challenge-grid,.impact-metric-grid,.tech-grid-wide,.gallery-grid{grid-template-columns:1fr}.gallery-card-wide{grid-column:auto}.impact-metric-card{min-height:auto}.evidence-frame{min-height:auto}}
+
+
+/* Healthcare claim denial additions */
+.claim-challenge-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.impact-metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.impact-metric-card{min-height:220px;padding:20px 16px;text-align:center;background:linear-gradient(180deg,rgba(34,211,197,.08),rgba(255,255,255,.015));border:1px solid rgba(34,211,197,.28);border-radius:9px}
+.impact-metric-card i{color:var(--accent);font-size:1.7rem}
+.impact-metric-card strong{display:block;margin-top:14px;color:var(--accent);font-size:clamp(1.55rem,3vw,2.5rem);line-height:1}
+.impact-metric-card h3{margin:12px 0 0;font-size:.9rem}
+.impact-metric-card p{margin:10px 0 0;color:var(--text-muted);font-size:.72rem;line-height:1.55}
+.impact-secondary-grid{grid-template-columns:1fr;margin-top:16px}
+.tech-grid-wide{grid-template-columns:repeat(4,minmax(0,1fr))}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.gallery-card{margin:0;padding:14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:9px}
+.gallery-card img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12)}
+.gallery-card figcaption{margin-top:10px;color:var(--text-muted);font-size:.76rem;line-height:1.5;text-align:center}
+.gallery-card-wide{grid-column:1/-1}
+@media(max-width:1100px){.claim-challenge-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tech-grid-wide{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:900px){.impact-metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.claim-challenge-grid,.impact-metric-grid,.tech-grid-wide,.gallery-grid{grid-template-columns:1fr}.gallery-card-wide{grid-column:auto}.impact-metric-card{min-height:auto}}
+
+/* Well Integrity Monitoring additions */
+.energy-challenge-grid{grid-template-columns:repeat(5,minmax(0,1fr))}.impact-metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.impact-metric-card{min-height:220px;padding:20px 16px;text-align:center;background:linear-gradient(180deg,rgba(34,211,197,.08),rgba(255,255,255,.015));border:1px solid rgba(34,211,197,.28);border-radius:9px}.impact-metric-card i{color:var(--accent);font-size:1.7rem}.impact-metric-card strong{display:block;margin-top:14px;color:var(--accent);font-size:clamp(1.55rem,3vw,2.5rem);line-height:1}.impact-metric-card h3{margin:12px 0 0;font-size:.9rem}.impact-metric-card p{margin:10px 0 0;color:var(--text-muted);font-size:.72rem;line-height:1.55}.impact-secondary-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:16px}.impact-note{margin:16px 0 0;padding:13px 15px;color:var(--text-muted);background:rgba(255,255,255,.025);border-left:3px solid var(--accent);border-radius:5px;font-size:.76rem;line-height:1.6}.tech-grid-wide{grid-template-columns:repeat(4,minmax(0,1fr))}.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}.gallery-card{margin:0;padding:14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:9px}.gallery-card img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12)}.gallery-card figcaption{margin-top:10px;color:var(--text-muted);font-size:.76rem;line-height:1.5;text-align:center}.gallery-card-wide{grid-column:1/-1}@media(max-width:1200px){.energy-challenge-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:900px){.energy-challenge-grid,.impact-metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tech-grid-wide{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:720px){.energy-challenge-grid,.impact-metric-grid,.impact-secondary-grid,.tech-grid-wide,.gallery-grid{grid-template-columns:1fr}.gallery-card-wide{grid-column:auto}.impact-metric-card{min-height:auto}}
+
+
+/* SME Credit Risk case study additions */
+.banking-challenge-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+.impact-metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.impact-metric-card{min-height:220px;padding:20px 16px;text-align:center;background:linear-gradient(180deg,rgba(34,211,197,.08),rgba(255,255,255,.015));border:1px solid rgba(34,211,197,.28);border-radius:9px}
+.impact-metric-card i{color:var(--accent);font-size:1.7rem}
+.impact-metric-card strong{display:block;margin-top:14px;color:var(--accent);font-size:clamp(1.55rem,3vw,2.5rem);line-height:1}
+.impact-metric-card h3{margin:12px 0 0;font-size:.9rem}
+.impact-metric-card p{margin:10px 0 0;color:var(--text-muted);font-size:.72rem;line-height:1.55}
+.impact-secondary-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:16px}
+.impact-note{margin:16px 0 0;padding:13px 15px;color:var(--text-muted);background:rgba(255,255,255,.025);border-left:3px solid var(--accent);border-radius:5px;font-size:.76rem;line-height:1.6}
+.tech-grid-wide{grid-template-columns:repeat(4,minmax(0,1fr))}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.gallery-card{margin:0;padding:14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:9px}
+.gallery-card img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12)}
+.gallery-card figcaption{margin-top:10px;color:var(--text-muted);font-size:.76rem;line-height:1.5;text-align:center}
+.gallery-card-wide{grid-column:1/-1}
+@media(max-width:1200px){.banking-challenge-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:900px){.banking-challenge-grid,.impact-metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tech-grid-wide{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.banking-challenge-grid,.impact-metric-grid,.impact-secondary-grid,.tech-grid-wide,.gallery-grid{grid-template-columns:1fr}.gallery-card-wide{grid-column:auto}.impact-metric-card{min-height:auto}}
+
+
+/* QSR Sales & Operational Performance additions */
+.qsr-challenge-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+.impact-metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.impact-metric-card{min-height:220px;padding:20px 16px;text-align:center;background:linear-gradient(180deg,rgba(34,211,197,.08),rgba(255,255,255,.015));border:1px solid rgba(34,211,197,.28);border-radius:9px}
+.impact-metric-card i{color:var(--accent);font-size:1.7rem}
+.impact-metric-card strong{display:block;margin-top:14px;color:var(--accent);font-size:clamp(1.55rem,3vw,2.5rem);line-height:1}
+.impact-metric-card h3{margin:12px 0 0;font-size:.9rem}
+.impact-metric-card p{margin:10px 0 0;color:var(--text-muted);font-size:.72rem;line-height:1.55}
+.impact-secondary-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:16px}
+.impact-note{margin:16px 0 0;padding:13px 15px;color:var(--text-muted);background:rgba(255,255,255,.025);border-left:3px solid var(--accent);border-radius:5px;font-size:.76rem;line-height:1.6}
+.tech-grid-wide{grid-template-columns:repeat(4,minmax(0,1fr))}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.gallery-card{margin:0;padding:14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:9px}
+.gallery-card img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12)}
+.gallery-card figcaption{margin-top:10px;color:var(--text-muted);font-size:.76rem;line-height:1.5;text-align:center}
+.gallery-card-wide{grid-column:1/-1}
+@media(max-width:1200px){.qsr-challenge-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:900px){.qsr-challenge-grid,.impact-metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tech-grid-wide{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.qsr-challenge-grid,.impact-metric-grid,.impact-secondary-grid,.tech-grid-wide,.gallery-grid{grid-template-columns:1fr}.gallery-card-wide{grid-column:auto}.impact-metric-card{min-height:auto}}
+
+
+/* Scholarship Student Progress additions */
+.education-challenge-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+.impact-metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.impact-metric-card{min-height:220px;padding:20px 16px;text-align:center;background:linear-gradient(180deg,rgba(34,211,197,.08),rgba(255,255,255,.015));border:1px solid rgba(34,211,197,.28);border-radius:9px}
+.impact-metric-card i{color:var(--accent);font-size:1.7rem}
+.impact-metric-card strong{display:block;margin-top:14px;color:var(--accent);font-size:clamp(1.55rem,3vw,2.5rem);line-height:1}
+.impact-metric-card h3{margin:12px 0 0;font-size:.9rem}
+.impact-metric-card p{margin:10px 0 0;color:var(--text-muted);font-size:.72rem;line-height:1.55}
+.impact-secondary-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:16px}
+.impact-note{margin:16px 0 0;padding:13px 15px;color:var(--text-muted);background:rgba(255,255,255,.025);border-left:3px solid var(--accent);border-radius:5px;font-size:.76rem;line-height:1.6}
+.tech-grid-wide{grid-template-columns:repeat(4,minmax(0,1fr))}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.gallery-card{margin:0;padding:14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:9px}
+.gallery-card img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12)}
+.gallery-card figcaption{margin-top:10px;color:var(--text-muted);font-size:.76rem;line-height:1.5;text-align:center}
+.gallery-card-wide{grid-column:1/-1}
+@media(max-width:1200px){.education-challenge-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:900px){.education-challenge-grid,.impact-metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tech-grid-wide{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.education-challenge-grid,.impact-metric-grid,.impact-secondary-grid,.tech-grid-wide,.gallery-grid{grid-template-columns:1fr}.gallery-card-wide{grid-column:auto}.impact-metric-card{min-height:auto}}
+
+
+/* Student Experience & NPS additions */
+.nps-challenge-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+.impact-metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.impact-metric-card{min-height:220px;padding:20px 16px;text-align:center;background:linear-gradient(180deg,rgba(34,211,197,.08),rgba(255,255,255,.015));border:1px solid rgba(34,211,197,.28);border-radius:9px}
+.impact-metric-card i{color:var(--accent);font-size:1.7rem}
+.impact-metric-card strong{display:block;margin-top:14px;color:var(--accent);font-size:clamp(1.55rem,3vw,2.5rem);line-height:1}
+.impact-metric-card h3{margin:12px 0 0;font-size:.9rem}
+.impact-metric-card p{margin:10px 0 0;color:var(--text-muted);font-size:.72rem;line-height:1.55}
+.impact-secondary-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:16px}
+.impact-note{margin:16px 0 0;padding:13px 15px;color:var(--text-muted);background:rgba(255,255,255,.025);border-left:3px solid var(--accent);border-radius:5px;font-size:.76rem;line-height:1.6}
+.evidence-frame{min-height:420px;padding:12px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#f2f4f6;border:1px solid rgba(34,211,197,.25);border-radius:9px}
+.evidence-frame img{width:100%;height:auto;display:block;object-fit:contain;border-radius:5px}
+.tech-grid-wide{grid-template-columns:repeat(4,minmax(0,1fr))}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.gallery-card{margin:0;padding:14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:9px}
+.gallery-card img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12)}
+.gallery-card figcaption{margin-top:10px;color:var(--text-muted);font-size:.76rem;line-height:1.5;text-align:center}
+.gallery-card-wide{grid-column:1/-1}
+@media(max-width:1200px){.nps-challenge-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:900px){.nps-challenge-grid,.impact-metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tech-grid-wide{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.nps-challenge-grid,.impact-metric-grid,.impact-secondary-grid,.tech-grid-wide,.gallery-grid{grid-template-columns:1fr}.gallery-card-wide{grid-column:auto}.impact-metric-card{min-height:auto}.evidence-frame{min-height:auto}}

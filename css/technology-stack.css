@@ -1,0 +1,162 @@
+/* =========================================================
+   FILE: css/technology-stack.css
+   PURPOSE: Technology Stack section
+========================================================= */
+
+.technology-stack {
+  position: relative;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(34, 211, 197, 0.035), transparent 38%),
+    #09121a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.technology-stack-container {
+  width: min(calc(100% - 48px), var(--container-width));
+  margin-inline: auto;
+  padding-block: 30px 36px;
+}
+
+.technology-stack-container .section-eyebrow {
+  margin-bottom: 18px;
+}
+
+.technology-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 7px;
+}
+
+.technology-group {
+  min-width: 0;
+  padding: 18px 18px 20px;
+}
+
+.technology-group + .technology-group {
+  border-left: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.technology-group h3 {
+  margin: 0 0 16px;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.technology-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.technology-tag {
+  min-height: 34px;
+  padding: 7px 14px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--text-primary);
+  background: rgba(5, 11, 16, 0.35);
+  border: 1px solid rgba(34, 211, 197, 0.48);
+  border-radius: 5px;
+
+  font-size: 0.75rem;
+  line-height: 1.2;
+  white-space: nowrap;
+
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    background-color var(--transition),
+    color var(--transition);
+}
+
+.technology-tag:hover {
+  transform: translateY(-2px);
+  color: #ffffff;
+  background: rgba(34, 211, 197, 0.08);
+  border-color: var(--accent);
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .technology-stack-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .technology-group:nth-child(3) {
+    border-left: 0;
+  }
+
+  .technology-group:nth-child(n + 3) {
+    border-top: 1px solid rgba(255, 255, 255, 0.09);
+  }
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+  .technology-stack-container {
+    width: min(calc(100% - 28px), var(--container-width));
+    padding-block: 30px;
+  }
+
+  .technology-stack-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .technology-group {
+    padding: 18px 16px;
+  }
+
+  .technology-group + .technology-group {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.09);
+  }
+
+  .technology-tags {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .technology-stack-container {
+    width: min(calc(100% - 22px), var(--container-width));
+  }
+
+  .technology-tag {
+    width: 100%;
+    white-space: normal;
+  }
+}
+
+/* Large desktop and TV */
+@media (min-width: 1600px) {
+  .technology-stack-container {
+    padding-block: 40px 44px;
+  }
+
+  .technology-group {
+    padding: 22px 22px 24px;
+  }
+
+  .technology-group h3 {
+    font-size: 0.9rem;
+  }
+
+  .technology-tag {
+    min-height: 38px;
+    padding-inline: 16px;
+    font-size: 0.82rem;
+  }
+}
+
+.technology-group,.technology-tag{min-width:0}
+@media(max-width:900px){.technology-stack-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.technology-stack-grid{grid-template-columns:1fr}.technology-group{border-left:0!important}.technology-group+.technology-group{border-top:1px solid rgba(255,255,255,.09)}.technology-tag{min-height:44px;white-space:normal;text-align:center}}
