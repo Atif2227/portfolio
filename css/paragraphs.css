@@ -1,0 +1,17 @@
+/* Consistent paragraph typography across all content pages. */
+body main p:not(.eyebrow):not(.case-tools),
+body footer p {
+  font-family: Inter, Arial, sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.7 !important;
+  letter-spacing: normal !important;
+}
+/* A quiet project-type label beneath titles, with matching paragraph typography. */
+body main .project-type {
+  color: #526b82;
+  margin: 10px 0 12px;
+}
+body main .case-card .project-type {
+  margin: 0;
+}
